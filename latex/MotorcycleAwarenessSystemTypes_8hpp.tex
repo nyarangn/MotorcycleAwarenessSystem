@@ -1,0 +1,128 @@
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp}{\section{Motorcycle\-Awareness\-System\-Types.\-hpp File Reference}
+\label{MotorcycleAwarenessSystemTypes_8hpp}\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+}
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+Include dependency graph for Motorcycle\-Awareness\-System\-Types.\-hpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{MotorcycleAwarenessSystemTypes_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MotorcycleAwarenessSystemTypes_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structCanSignal__t}{Can\-Signal\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure that emulates a C\-A\-N bus signal. \end{DoxyCompactList}\item 
+struct \hyperlink{structGpsSignal__t}{Gps\-Signal\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure that emulates a G\-P\-S signal. \end{DoxyCompactList}\item 
+struct \hyperlink{structRadarSignal__t}{Radar\-Signal\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Structure that emulates a Radar signal. \end{DoxyCompactList}\item 
+struct \hyperlink{structBlueToothMessage__t}{Blue\-Tooth\-Message\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Struct for bluetooth message. \end{DoxyCompactList}\item 
+struct \hyperlink{structMotorCycleLocation__t}{Motor\-Cycle\-Location\-\_\-t}
+\begin{DoxyCompactList}\small\item\em Struct for the V2\-V data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef float \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{Coordinate\-\_\-t}
+\begin{DoxyCompactList}\small\item\em G\-P\-S coordinates. \end{DoxyCompactList}\item 
+typedef float \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}{current\-Time\-\_\-t}
+\item 
+typedef float \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}{Object\-Distance}
+\begin{DoxyCompactList}\small\item\em Distance of an object from a detecting radar sensor. \end{DoxyCompactList}\item 
+typedef float \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}{Object\-Velocity}
+\item 
+typedef int \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}{Data\-Packet\-\_\-t} \mbox{[}255\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{Vehicle\-Type} \{ \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}, 
+\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{C\-A\-R}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for vehicle type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!Coordinate\-\_\-t@{Coordinate\-\_\-t}}
+\index{Coordinate\-\_\-t@{Coordinate\-\_\-t}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{Coordinate\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Coordinate\-\_\-t}}}\label{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}
+
+
+G\-P\-S coordinates. 
+
+
+
+Definition at line 21 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!current\-Time\-\_\-t@{current\-Time\-\_\-t}}
+\index{current\-Time\-\_\-t@{current\-Time\-\_\-t}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{current\-Time\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf current\-Time\-\_\-t}}}\label{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}
+Current time for a pair of G\-P\-S coordinates 
+
+Definition at line 22 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!Data\-Packet\-\_\-t@{Data\-Packet\-\_\-t}}
+\index{Data\-Packet\-\_\-t@{Data\-Packet\-\_\-t}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{Data\-Packet\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef int Data\-Packet\-\_\-t\mbox{[}255\mbox{]}}}\label{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}
+Data packet for the V2\-V communication 
+
+Definition at line 47 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!Object\-Distance@{Object\-Distance}}
+\index{Object\-Distance@{Object\-Distance}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{Object\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Object\-Distance}}}\label{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}
+
+
+Distance of an object from a detecting radar sensor. 
+
+
+
+Definition at line 31 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!Object\-Velocity@{Object\-Velocity}}
+\index{Object\-Velocity@{Object\-Velocity}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{Object\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}typedef float {\bf Object\-Velocity}}}\label{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}
+Velocity of an object detected by a radar sensor 
+
+Definition at line 32 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!Vehicle\-Type@{Vehicle\-Type}}
+\index{Vehicle\-Type@{Vehicle\-Type}!MotorcycleAwarenessSystemTypes.hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}
+\subsubsection[{Vehicle\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Vehicle\-Type}}}\label{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}
+
+
+Enum for vehicle type. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\-O\-T\-O\-R\-C\-Y\-C\-L\-E@{M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}!Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!M\-O\-T\-O\-R\-C\-Y\-C\-L\-E@{M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}}\item[{\em 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}\label{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}
+}]\index{C\-A\-R@{C\-A\-R}!Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}}\index{Motorcycle\-Awareness\-System\-Types.\-hpp@{Motorcycle\-Awareness\-System\-Types.\-hpp}!C\-A\-R@{C\-A\-R}}\item[{\em 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{C\-A\-R}\label{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 8 of file Motorcycle\-Awareness\-System\-Types.\-hpp.
+
+
+\begin{DoxyCode}
+9 \{
+10     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{MOTORCYCLE},
+11     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR}
+12 \};
+\end{DoxyCode}

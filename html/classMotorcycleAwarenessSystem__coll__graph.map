@@ -1,0 +1,4 @@
+<map id="MotorcycleAwarenessSystem" name="MotorcycleAwarenessSystem">
+<area shape="rect" id="node2" href="$structRadarSignal__t.html" title="Structure that emulates a Radar signal. " alt="" coords="5,13,109,105"/>
+<area shape="rect" id="node3" href="$structGpsSignal__t.html" title="Structure that emulates a GPS signal. " alt="" coords="181,5,283,112"/>
+</map>
