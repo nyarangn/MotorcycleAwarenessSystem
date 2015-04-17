@@ -8,11 +8,24 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -74,6 +87,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('functions_vars.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -111,9 +138,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>dataPacket
 : <a class="el" href="structMotorCycleLocation__t.html#a1f854587b19dbe91dffd637ce70be62e">MotorCycleLocation_t</a>
 </li>
-<li>distance
-: <a class="el" href="structRadarSignal__t.html#a79f6d1be92d835eba8fe0646c37d1053">RadarSignal_t</a>
-</li>
 <li>isBlinkerOn
 : <a class="el" href="structCanSignal__t.html#a209edc6387534529f57c2362ec8f2586">CanSignal_t</a>
 </li>
@@ -129,11 +153,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>motorcycleRadarSignal
 : <a class="el" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem</a>
 </li>
+<li>objectDistance
+: <a class="el" href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">RadarSignal_t</a>
+</li>
+<li>objectVelocity
+: <a class="el" href="structRadarSignal__t.html#a0bbaf402c80288a0819dbbfaded8a44a">RadarSignal_t</a>
+</li>
 <li>vehicleType
 : <a class="el" href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem</a>
-</li>
-<li>velocity
-: <a class="el" href="structRadarSignal__t.html#ac907ac4305b7d6c172661e95b030359d">RadarSignal_t</a>
 </li>
 <li>x
 : <a class="el" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">GpsSignal_t</a>
@@ -143,11 +170,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 16 2015 21:31:16 for Motorcycle Awareness System (MAS) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated on Fri Apr 17 2015 13:10:37 for Motorcycle Awareness System (MAS) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
 </body>
 </html>

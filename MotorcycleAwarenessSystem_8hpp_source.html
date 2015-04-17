@@ -8,11 +8,24 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+});
+</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -66,6 +79,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     </ul>
   </div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('MotorcycleAwarenessSystem_8hpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -141,15 +168,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classMotorcycleAwarenessSystem_html_a89ce16a722b3575e1415cbe9c7eedbd3"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a89ce16a722b3575e1415cbe9c7eedbd3">MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem</a></div><div class="ttdeci">~MotorcycleAwarenessSystem(void)</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00020">MotorcycleAwarenessSystem.cpp:20</a></div></div>
 <div class="ttc" id="structRadarSignal__t_html"><div class="ttname"><a href="structRadarSignal__t.html">RadarSignal_t</a></div><div class="ttdoc">Structure that emulates a Radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00034">MotorcycleAwarenessSystemTypes.hpp:34</a></div></div>
 <div class="ttc" id="structMotorCycleLocation__t_html"><div class="ttname"><a href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a></div><div class="ttdoc">Struct for the V2V data. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00049">MotorcycleAwarenessSystemTypes.hpp:49</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the can signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the CAN signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
 <div class="ttc" id="classMotorcycleAwarenessSystem_html_a0744e71b9f440a86f5078c876ba7629b"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem::motorcycleRadarSignal</a></div><div class="ttdeci">RadarSignal_t * motorcycleRadarSignal</div><div class="ttdoc">Motorcycle radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">MotorcycleAwarenessSystem.hpp:27</a></div></div>
 <div class="ttc" id="classMotorcycleAwarenessSystem_html_a9a8185e00b60d0be58bfa76166063128"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">MotorcycleAwarenessSystem::carGpsSignal</a></div><div class="ttdeci">GpsSignal_t * carGpsSignal</div><div class="ttdoc">Car GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">MotorcycleAwarenessSystem.hpp:29</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 16 2015 21:31:16 for Motorcycle Awareness System (MAS) by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.6
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="MotorcycleAwarenessSystem_8hpp.html">MotorcycleAwarenessSystem.hpp</a></li>
+    <li class="footer">Generated on Fri Apr 17 2015 13:10:37 for Motorcycle Awareness System (MAS) by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
 </body>
 </html>
