@@ -49,7 +49,7 @@ void MotorcycleAwarenessSystem::MonitorConditions( void )
         // Check for hazards
         if ( IsHazardPresent() == true )
         {
-            // Warm the motorcycle operator
+            // Warn the motorcycle operator
             RelayWarningToOperator();
         }
     }
@@ -97,7 +97,7 @@ bool MotorcycleAwarenessSystem::IsHazardPresent( void )
 {
     bool isHazardPresent = false;
 
-    if ( abs( this->motorcycleRadarSignal->distance ) >= DANGER_ZONE )
+    if ( abs( this->motorcycleRadarSignal->objectDistance ) >= DANGER_ZONE )
     {
         isHazardPresent = true;
     }

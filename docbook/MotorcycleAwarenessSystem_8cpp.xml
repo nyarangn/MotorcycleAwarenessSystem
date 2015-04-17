@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="MotorcycleAwarenessSystem_8cpp">
+    <title>MotorcycleAwarenessSystem.cpp File Reference</title>
+    <programlisting>#include &quot;MotorcycleAwarenessSystem.hpp&quot;</programlisting>
+    <programlisting>#include &quot;MotorcycleAwarenessSystemTypes.hpp&quot;</programlisting>
+    <programlisting>#include &lt;list&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /home/george/Documents/Sandbox/blind_spot_monitoring/MotorcycleAwarenessSystem.cpp</para>
+    </simplesect>
+</section>

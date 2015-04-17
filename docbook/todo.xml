@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Todo List</title>
+
+<para><variablelist>
+<varlistentry><term><anchor id="todo_1_todo000003"/>Member <link linkend="classMotorcycleAwarenessSystem_1a840a5bc17d75276ecdb3a39d7aaf4109">MotorcycleAwarenessSystem::GetMotorcycleLocation</link>  (void)</term>
+<listitem>
+<para>Acquire the data packet from the motorcycle  </para>
+</listitem></varlistentry>
+<varlistentry><term><anchor id="todo_1_todo000001"/>Member <link linkend="classMotorcycleAwarenessSystem_1a239655aca9c875b1dbbad3ce155c7892">MotorcycleAwarenessSystem::IsMotorcycleInRange</link>  (void)</term>
+<listitem>
+<para>Process the data packet and determine threat  </para>
+</listitem></varlistentry>
+<varlistentry><term><anchor id="todo_1_todo000002"/>Member <link linkend="classMotorcycleAwarenessSystem_1aec5e4731c6bf0789821ba2793918e3ee">MotorcycleAwarenessSystem::RelayWarningToOperator</link>  (void)</term>
+<listitem>
+<para>Transmit the bluetooth message to the operator </para>
+</listitem></varlistentry>
+</variablelist>
+</para>
+
+</chapter>

@@ -25,7 +25,7 @@ struct GpsSignal_t
 {
     Coordinate_t x; ///< x-axis coordinate
     Coordinate_t y; ///< y-axis coordinate
-    currentTime_t currentTime; ///< Current time at coords x & y
+    currentTime_t currentTime; ///< Current time at coordinates x,y
 };
 
 typedef float ObjectDistance; ///< Distance of an object from a detecting radar sensor
@@ -33,8 +33,8 @@ typedef float ObjectVelocity; ///< Velocity of an object detected by a radar sen
 /// Structure that emulates a Radar signal
 struct RadarSignal_t
 {
-    ObjectDistance distance; ///< Distance from sensed object to radar sensor
-    ObjectVelocity velocity; ///< Velocity of sensed object
+    ObjectDistance objectDistance; ///< Distance from sensed object to radar sensor
+    ObjectVelocity objectVelocity; ///< Velocity of sensed object
 };
 
 /// Struct for bluetooth message

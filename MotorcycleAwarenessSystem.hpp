@@ -23,7 +23,7 @@ class MotorcycleAwarenessSystem
         std::list<GpsSignal_t> motorcycleLocation; ///< Container to track the motorcycle's location
         static const unsigned int DANGER_ZONE = 15U; ///< Threat zone in feet
         VehicleType vehicleType; ///< The vehicle type (motorcycle or car)
-        std::map<VehicleType, CanSignal_t*> canSignal; ///< Storage for the can signals
+        std::map<VehicleType, CanSignal_t*> canSignal; ///< Storage for the CAN signals
         RadarSignal_t* motorcycleRadarSignal; ///< Motorcycle radar signal
         GpsSignal_t* motorcycleGpsSignal; ///< Motorcycle GPS signal
         GpsSignal_t* carGpsSignal; ///< Car GPS signal

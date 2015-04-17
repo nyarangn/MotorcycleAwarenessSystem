@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structMotorCycleLocation__t">
+<title>MotorCycleLocation_t struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="MotorcycleAwarenessSystemTypes_8hpp">&lt;MotorcycleAwarenessSystemTypes.hpp&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>DataPacket_t dataPacket<para><emphasis>V2V communication data packet.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Struct for the V2V data. </para>
+    </simplesect>
+</section>

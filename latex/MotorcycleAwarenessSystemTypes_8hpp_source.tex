@@ -1,0 +1,52 @@
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source}{\section{Motorcycle\-Awareness\-System\-Types.\-hpp}
+}
+
+\begin{DoxyCode}
+00001 \textcolor{preprocessor}{#ifndef MOTORCYCLEAWARENESSSYSTEMTYPES\_HPP}
+00002 \textcolor{preprocessor}{}\textcolor{preprocessor}{#define MOTORCYCLEAWARENESSSYSTEMTYPES\_HPP}
+00003 \textcolor{preprocessor}{}
+00004 \textcolor{preprocessor}{#include <list>}
+00005 \textcolor{preprocessor}{#include <map>}
+00006 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00008}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{00008} \textcolor{keyword}{enum} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{VehicleType}
+00009 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00010}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{00010}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{MOTORCYCLE},
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00011}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{00011}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR}
+00012 \};
+00013 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00015}{}\hyperlink{structCanSignal__t}{00015} \textcolor{keyword}{struct }\hyperlink{structCanSignal__t}{CanSignal\_t}
+00016 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00017}{}\hyperlink{structCanSignal__t_a209edc6387534529f57c2362ec8f2586}{00017}     \textcolor{keywordtype}{bool} \hyperlink{structCanSignal__t_a209edc6387534529f57c2362ec8f2586}{isBlinkerOn}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00018}{}\hyperlink{structCanSignal__t_a460bece1b65aa03b07f986c71f818456}{00018}     \textcolor{keywordtype}{int} \hyperlink{structCanSignal__t_a460bece1b65aa03b07f986c71f818456}{busData}[16]; 
+00019 \};
+00020 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00021}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{00021} \textcolor{keyword}{typedef} \textcolor{keywordtype}{float} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{Coordinate\_t}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00022}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}{00022} \textcolor{keyword}{typedef} \textcolor{keywordtype}{float} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}{currentTime\_t}; 
+00023 \textcolor{keyword}{struct }\hyperlink{structGpsSignal__t}{GpsSignal\_t}
+00025 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00026}{}\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{00026}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{Coordinate\_t} \hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00027}{}\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{00027}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae989615510617e9b0ad39dcd343c78fb}{Coordinate\_t} \hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00028}{}\hyperlink{structGpsSignal__t_abc96245129f39c6e51e8bfe955f2047e}{00028}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a75ae168a2dad22557428f696df806a76}{currentTime\_t} \hyperlink{structGpsSignal__t_abc96245129f39c6e51e8bfe955f2047e}{currentTime}; 
+00029 \};
+00030 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00031}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}{00031} \textcolor{keyword}{typedef} \textcolor{keywordtype}{float} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}{ObjectDistance}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00032}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}{00032} \textcolor{keyword}{typedef} \textcolor{keywordtype}{float} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}{ObjectVelocity}; 
+00033 \textcolor{keyword}{struct }\hyperlink{structRadarSignal__t}{RadarSignal\_t}
+00035 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00036}{}\hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{00036}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a6d34a01b51bff9b1cc17900d711a9b76}{ObjectDistance} \hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{objectDistance}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00037}{}\hyperlink{structRadarSignal__t_a0bbaf402c80288a0819dbbfaded8a44a}{00037}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ae069b9d80ba548bc07502c05a1efaac0}{ObjectVelocity} \hyperlink{structRadarSignal__t_a0bbaf402c80288a0819dbbfaded8a44a}{objectVelocity}; 
+00038 \};
+00039 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00041}{}\hyperlink{structBlueToothMessage__t}{00041} \textcolor{keyword}{struct }\hyperlink{structBlueToothMessage__t}{BlueToothMessage\_t}
+00042 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00043}{}\hyperlink{structBlueToothMessage__t_a2dd315aa1cba1d2d3045e26b9f171e61}{00043}     \textcolor{keywordtype}{bool} \hyperlink{structBlueToothMessage__t_a2dd315aa1cba1d2d3045e26b9f171e61}{isHazardPresent}; 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00044}{}\hyperlink{structBlueToothMessage__t_ab872789a32f068dae8bcf77122256b78}{00044}     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{structBlueToothMessage__t_ab872789a32f068dae8bcf77122256b78}{dataBuffer}[255]; 
+00045 \};
+00046 
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00047}{}\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}{00047} \textcolor{keyword}{typedef} \textcolor{keywordtype}{int} \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}{DataPacket\_t}[255]; 
+00048 \textcolor{keyword}{struct }\hyperlink{structMotorCycleLocation__t}{MotorCycleLocation\_t}
+00050 \{
+\hypertarget{MotorcycleAwarenessSystemTypes_8hpp_source_l00051}{}\hyperlink{structMotorCycleLocation__t_a1f854587b19dbe91dffd637ce70be62e}{00051}     \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_ac0eb6e9beb8fa8db296c699fcc8494e6}{DataPacket\_t} \hyperlink{structMotorCycleLocation__t_a1f854587b19dbe91dffd637ce70be62e}{dataPacket}; 
+00052 \};
+00053 \textcolor{preprocessor}{#endif}
+\end{DoxyCode}

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Motorcycle Awareness System (MAS)</title>
+    </info>
+        <xi:include href="todo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="structBlueToothMessage__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structCanSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structGpsSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="classMotorcycleAwarenessSystem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structMotorCycleLocation__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structRadarSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="MotorcycleAwarenessSystem_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="MotorcycleAwarenessSystem_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="MotorcycleAwarenessSystemTypes_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

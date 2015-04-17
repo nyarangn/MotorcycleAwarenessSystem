@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vehicletype',['vehicleType',['../classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2',1,'MotorcycleAwarenessSystem']]],
-  ['velocity',['velocity',['../structRadarSignal__t.html#ac907ac4305b7d6c172661e95b030359d',1,'RadarSignal_t']]]
+  ['objectdistance',['objectDistance',['../structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb',1,'RadarSignal_t']]],
+  ['objectvelocity',['objectVelocity',['../structRadarSignal__t.html#a0bbaf402c80288a0819dbbfaded8a44a',1,'RadarSignal_t']]]
 ];

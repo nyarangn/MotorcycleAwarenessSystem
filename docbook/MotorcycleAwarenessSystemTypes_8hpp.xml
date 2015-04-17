@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="MotorcycleAwarenessSystemTypes_8hpp">
+    <title>MotorcycleAwarenessSystemTypes.hpp File Reference</title>
+    <programlisting>#include &lt;list&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structCanSignal__t">CanSignal_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structGpsSignal__t">GpsSignal_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structRadarSignal__t">RadarSignal_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structBlueToothMessage__t">BlueToothMessage_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structMotorCycleLocation__t">MotorCycleLocation_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>enum <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a0c05c42b98a847f971385c81c2a81afa">VehicleType</link>{<link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a">MOTORCYCLE</link>, <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40">CAR</link>}</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1ae989615510617e9b0ad39dcd343c78fb">Coordinate_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a75ae168a2dad22557428f696df806a76">currentTime_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a6d34a01b51bff9b1cc17900d711a9b76">ObjectDistance</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1ae069b9d80ba548bc07502c05a1efaac0">ObjectVelocity</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int  <link linkend="MotorcycleAwarenessSystemTypes_8hpp_1ac0eb6e9beb8fa8db296c699fcc8494e6">DataPacket_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /home/george/Documents/Sandbox/blind_spot_monitoring/MotorcycleAwarenessSystemTypes.hpp</para>
+    </simplesect>
+</section>

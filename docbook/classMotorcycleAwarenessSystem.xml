@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classMotorcycleAwarenessSystem">
+<title>MotorcycleAwarenessSystem class Reference</title>
+<para>
+    <programlisting>#include <link linkend="MotorcycleAwarenessSystem_8hpp">&lt;MotorcycleAwarenessSystem.hpp&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::list&lt; GpsSignal_t &gt; motorcycleLocation<para><emphasis>Container to track the motorcycle&apos;s location.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>VehicleType vehicleType<para><emphasis>The vehicle type (motorcycle or car)</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::map&lt; VehicleType, CanSignal_t * &gt; canSignal<para><emphasis>Storage for the CAN signals.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RadarSignal_t * motorcycleRadarSignal<para><emphasis>Motorcycle radar signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GpsSignal_t * motorcycleGpsSignal<para><emphasis>Motorcycle GPS signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GpsSignal_t * carGpsSignal<para><emphasis>Car GPS signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static const unsigned int DANGER_ZONE<para><emphasis>Threat zone in feet.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMotorcycleAwarenessSystem_1ab0fb3823809dc056fecc82cc72a80a55">MotorcycleAwarenessSystem</link> (
+<link linkend="MotorcycleAwarenessSystemTypes_8hpp_1a0c05c42b98a847f971385c81c2a81afa">VehicleType</link> vehicleType)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classMotorcycleAwarenessSystem_1a89ce16a722b3575e1415cbe9c7eedbd3">~MotorcycleAwarenessSystem</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classMotorcycleAwarenessSystem_1a55f1ea16b6311120ea42b460fb8b3a71">Initialize</link> (
+<link linkend="structCanSignal__t">CanSignal_t</link> * motorcycleCanSignal, <link linkend="structCanSignal__t">CanSignal_t</link> * carCanSignal, <link linkend="structRadarSignal__t">RadarSignal_t</link> * motorcycleRadarSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * motorcycleGpsSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * carGpsSignal)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classMotorcycleAwarenessSystem_1afb19e832c17d43941d9ed6c4f4435a2e">MonitorConditions</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classMotorcycleAwarenessSystem_1a9c3f98a014b0af39fa120f478eb5f348">IsVehicleBlinkerOn</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classMotorcycleAwarenessSystem_1a239655aca9c875b1dbbad3ce155c7892">IsMotorcycleInRange</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classMotorcycleAwarenessSystem_1a35d59c8299b0d5ef43c10306cc7f2ee1">IsHazardPresent</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classMotorcycleAwarenessSystem_1a4e6eec23ec46e24ee377a3c94e15eba4">TrackMotorcycle</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="classMotorcycleAwarenessSystem_1aec5e4731c6bf0789821ba2793918e3ee">RelayWarningToOperator</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="structMotorCycleLocation__t">MotorCycleLocation_t</link> <link linkend="classMotorcycleAwarenessSystem_1a840a5bc17d75276ecdb3a39d7aaf4109">GetMotorcycleLocation</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Brief Description</title>
+
+<para>Class declaration for the Motorcycle Awareness System (MAS) </para>
+    </simplesect>
+            <section xml:id="classMotorcycleAwarenessSystem_1ab0fb3823809dc056fecc82cc72a80a55">
+                <title>MotorcycleAwarenessSystem::MotorcycleAwarenessSystem (VehicleType vehicleType)</title> <emphasis>Constructor.</emphasis>
+                
+<para>Class definition for the Motorcycle Awareness System (MAS). This class processes various signals and interactions to realize the MAS </para>
+
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a89ce16a722b3575e1415cbe9c7eedbd3">
+                <title>MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem (void)</title> <emphasis>Destructor.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a55f1ea16b6311120ea42b460fb8b3a71">
+                <title>void MotorcycleAwarenessSystem::Initialize (CanSignal_t *motorcycleCanSignal, CanSignal_t *carCanSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</title> <emphasis>Method to initialize the MAS system.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1afb19e832c17d43941d9ed6c4f4435a2e">
+                <title>void MotorcycleAwarenessSystem::MonitorConditions (void)</title> <emphasis>Method to continuously monitor the conditions during run-time.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a9c3f98a014b0af39fa120f478eb5f348">
+                <title>bool MotorcycleAwarenessSystem::IsVehicleBlinkerOn (void)</title> <emphasis>Method to determine whether the car&apos;s blinker is ON.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a239655aca9c875b1dbbad3ce155c7892">
+                <title>bool MotorcycleAwarenessSystem::IsMotorcycleInRange (void)</title> <emphasis>Method to determine whether the motorcycle is within the car&apos;s range.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a35d59c8299b0d5ef43c10306cc7f2ee1">
+                <title>bool MotorcycleAwarenessSystem::IsHazardPresent (void)</title> <emphasis>Method to determine whether a hazard is within the danger zone of the motorcycle.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a4e6eec23ec46e24ee377a3c94e15eba4">
+                <title>void MotorcycleAwarenessSystem::TrackMotorcycle (void)</title> <emphasis>Method to track the motorcycle using its GPS signal.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1aec5e4731c6bf0789821ba2793918e3ee">
+                <title>void MotorcycleAwarenessSystem::RelayWarningToOperator (void)</title> <emphasis>Method to relay a warning to operator via bluetooth.</emphasis>
+                
+            </section>
+            <section xml:id="classMotorcycleAwarenessSystem_1a840a5bc17d75276ecdb3a39d7aaf4109">
+                <title>MotorCycleLocation_t MotorcycleAwarenessSystem::GetMotorcycleLocation (void)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

@@ -29,45 +29,45 @@ int \hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main} (void)
 )}}\label{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}
 
 
-Definition at line 10 of file main.\-cpp.
+Definition at line \hyperlink{main_8cpp_source_l00010}{10} of file \hyperlink{main_8cpp_source}{main.\-cpp}.
 
 
 \begin{DoxyCode}
-11 \{
-12     \textcolor{comment}{// Define mock signals}
-13     \hyperlink{structCanSignal__t}{CanSignal\_t}* motorcycleCanSignal = \textcolor{keyword}{new} \hyperlink{structCanSignal__t}{CanSignal\_t};
-14     \hyperlink{structCanSignal__t}{CanSignal\_t}* carCanSignal = \textcolor{keyword}{new} \hyperlink{structCanSignal__t}{CanSignal\_t};
-15     \hyperlink{structRadarSignal__t}{RadarSignal\_t}* motorcycleRadarSignal = \textcolor{keyword}{new} \hyperlink{structRadarSignal__t}{RadarSignal\_t};
-16     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* motorcycleGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};
-17     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* carGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};;
-18 
-19     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle}
-20     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_motorcycle( 
+00011 \{
+00012     \textcolor{comment}{// Define mock signals}
+00013     \hyperlink{structCanSignal__t}{CanSignal\_t}* motorcycleCanSignal = \textcolor{keyword}{new} \hyperlink{structCanSignal__t}{CanSignal\_t};
+00014     \hyperlink{structCanSignal__t}{CanSignal\_t}* carCanSignal = \textcolor{keyword}{new} \hyperlink{structCanSignal__t}{CanSignal\_t};
+00015     \hyperlink{structRadarSignal__t}{RadarSignal\_t}* motorcycleRadarSignal = \textcolor{keyword}{new} \hyperlink{structRadarSignal__t}{RadarSignal\_t};
+00016     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* motorcycleGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};
+00017     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* carGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};;
+00018 
+00019     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle}
+00020     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_motorcycle( 
       \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{MOTORCYCLE} );
-21     \textcolor{comment}{// Initialize the car MAS}
-22     MAS\_motorcycle.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
-23                                           motorcycleGpsSignal, carGpsSignal );
-24 
-25     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the car}
-26     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_car( \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR} );
-27     \textcolor{comment}{// Initialize the car MAS}
-28     MAS\_car.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
-29                                           motorcycleGpsSignal, carGpsSignal );
-30 
-31     \textcolor{comment}{// Run the MAS systems for the car & motorcycle}
-32     \textcolor{keywordflow}{while} ( \textcolor{keyword}{true} )
-33     \{
-34         MAS\_motorcycle.MonitorConditions();
-35         MAS\_car.MonitorConditions();
-36         usleep(250);
-37 
-38 \textcolor{preprocessor}{#ifdef MAS\_DEBUG}
-39 \textcolor{preprocessor}{}        std::cout << \textcolor{stringliteral}{"The MAS is running"} << std::endl;
-40 \textcolor{preprocessor}{#endif}
-41 \textcolor{preprocessor}{}    \}
-42 
-43     \textcolor{keywordflow}{return} 0;
-44 \}
+00021     \textcolor{comment}{// Initialize the car MAS}
+00022     MAS\_motorcycle.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
+00023                                           motorcycleGpsSignal, carGpsSignal );
+00024 
+00025     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the car}
+00026     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_car( \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR} );
+00027     \textcolor{comment}{// Initialize the car MAS}
+00028     MAS\_car.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
+00029                                           motorcycleGpsSignal, carGpsSignal );
+00030 
+00031     \textcolor{comment}{// Run the MAS systems for the car & motorcycle}
+00032     \textcolor{keywordflow}{while} ( \textcolor{keyword}{true} )
+00033     \{
+00034         MAS\_motorcycle.MonitorConditions();
+00035         MAS\_car.MonitorConditions();
+00036         usleep(250);
+00037 
+00038 \textcolor{preprocessor}{#ifdef MAS\_DEBUG}
+00039 \textcolor{preprocessor}{}        std::cout << \textcolor{stringliteral}{"The MAS is running"} << std::endl;
+00040 \textcolor{preprocessor}{#endif}
+00041 \textcolor{preprocessor}{}    \}
+00042 
+00043     \textcolor{keywordflow}{return} 0;
+00044 \}
 \end{DoxyCode}
 
 
