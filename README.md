@@ -1,2 +1,0 @@
-# MotorcycleAwarenessSystem
-Motorcycle Awareness System
