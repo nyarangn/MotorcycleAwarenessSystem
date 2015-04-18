@@ -2,13 +2,13 @@
 <chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Motorcycle Awareness System Overview</title>
 
-<para>This low-level design documentation details a mockup of the Motorcycle Awareness System. It provides part of the functionality of the MAS for both the motorcycle and car. Mocking of input signals such as the radar signals, vehicle-to-vehicle (V2V) communication signals, and GPS signlas mimics the interactions that the MAS would have with actual sensor data on the finished product.</para>
+<para>This low-level design documentation details a mockup of the Motorcycle Awareness System. It provides part of the functionality of the MAS for both the motorcycle and car. Mocking of input signals such as the radar signals, vehicle-to-vehicle (V2V) communication signals, and GPS signals mimics the interactions that the MAS would have with actual sensor data on the finished product.</para>
 
-<para>The implemented functionality includes continuous tracking of the motorcycle using GPS, determining whether a hazard is present using the mnotorcycle&apos;s radar sensor signals, and relaying a warning to the motorcycle rider of a potential threat. For the car, the logic determines whether the car&apos;s blinker is on based on blinker signal data on the CAN bus, determines whether a motorcycle is in range and assess the potential danger, and issues a warning to the driver as necessary.</para>
+<para>The implemented functionality includes continuous tracking of the motorcycle using GPS, determining whether a hazard is present using the motorcycle&apos;s radar sensor signals, and relaying a warning to the motorcycle rider of a potential threat. For the car, the logic determines whether the car&apos;s blinker is on based on blinker signal data on the CAN bus, determines whether a motorcycle is in range and assess the potential danger, and issues a warning to the driver as necessary.</para>
 
 <para><emphasis role="bold">MAS Concept Sketch</emphasis>  
     <figure>
-        <title>MAS system overview</title>
+        <title>MAS concept sketch</title>
     <mediaobject>
         <imageobject>
             <imagedata width="12cm" align="center" fileref="MAS_system_overview.eps"></imagedata>
