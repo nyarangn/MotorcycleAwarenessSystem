@@ -12,9 +12,9 @@ var classMotorcycleAwarenessSystem =
     [ "TrackMotorcycle", "classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4", null ],
     [ "canSignal", "classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f", null ],
     [ "carGpsSignal", "classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128", null ],
-    [ "DANGER_ZONE", "classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c", null ],
     [ "motorcycleGpsSignal", "classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4", null ],
     [ "motorcycleLocation", "classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac", null ],
     [ "motorcycleRadarSignal", "classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b", null ],
+    [ "SAFETY_ZONE", "classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e", null ],
     [ "vehicleType", "classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2", null ]
 ];

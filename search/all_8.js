@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['todo_20list',['Todo List',['../todo.html',1,'']]],
-  ['trackmotorcycle',['TrackMotorcycle',['../classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4',1,'MotorcycleAwarenessSystem']]]
+  ['safety_5fzone',['SAFETY_ZONE',['../classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e',1,'MotorcycleAwarenessSystem']]]
 ];
