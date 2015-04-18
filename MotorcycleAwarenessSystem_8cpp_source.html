@@ -181,8 +181,8 @@ $(document).ready(function(){initNavTree('MotorcycleAwarenessSystem_8cpp_source.
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> isInRange = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Determine where the motorcycle is relative to the car using the GPS signals</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> ( ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> )) ||</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> )))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> ( abs( (this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a>) - (this-&gt;motorcycleGpsSignal-&gt;x) ) &lt;= <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> &amp;&amp;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         abs( (this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a>) - (this-&gt;motorcycleGpsSignal-&gt;y) ) &lt;= <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> )</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        isInRange = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('MotorcycleAwarenessSystem_8cpp_source.
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> isHazardPresent = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> ( abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">motorcycleRadarSignal</a>-&gt;<a class="code" href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">objectDistance</a> ) &gt;= <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> )</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> ( abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">motorcycleRadarSignal</a>-&gt;<a class="code" href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">objectDistance</a> ) &lt;= <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> )</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        isHazardPresent = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
@@ -269,7 +269,7 @@ $(document).ready(function(){initNavTree('MotorcycleAwarenessSystem_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="MotorcycleAwarenessSystem_8cpp.html">MotorcycleAwarenessSystem.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 17 2015 23:53:22 for Motorcycle Awareness System (MAS) by
+    <li class="footer">Generated on Sat Apr 18 2015 00:30:03 for Motorcycle Awareness System (MAS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
