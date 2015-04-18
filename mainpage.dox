@@ -1,0 +1,14 @@
+/// @mainpage Motorcycle Awareness System Overview
+/// <p>This low-level design documentation details a mockup of the Motorcycle Awareness System.
+/// It provides part of the functionality of the MAS for both the motorcycle and car. Mocking
+/// of input signals such as the radar signals, vehicle-to-vehicle (V2V) communication signals, and GPS
+/// signlas mimics the interactions that the MAS would have with actual sensor data on the finished product.</p>
+/// <p>The implemented functionality includes continuous tracking of the motorcycle using GPS, determining whether a hazard
+/// is present using the mnotorcycle's radar sensor signals, and relaying a warning to the motorcycle rider of a potential threat. For the car, the logic
+/// determines whether the car's blinker is on based on blinker signal data on the CAN bus, determines whether a
+/// motorcycle is in range and assess the potential danger, and issues a warning to the driver as
+/// necessary.</p>
+///
+/// <b>MAS Concept Sketch</b>
+/// @image html MAS_system_overview.png
+/// @image latex MAS_system_overview.eps "MAS system overview" width=12cm

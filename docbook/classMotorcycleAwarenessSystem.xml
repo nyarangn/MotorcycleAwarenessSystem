@@ -9,7 +9,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>std::list&lt; GpsSignal_t &gt; motorcycleLocation<para><emphasis>Container to track the motorcycle&apos;s location.</emphasis></para></para>
+                        <para>std::list&lt; GpsSignal_t &gt; motorcycleLocation<para><emphasis>Container used to track the motorcycle&apos;s location.</emphasis></para></para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -30,21 +30,21 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>RadarSignal_t * motorcycleRadarSignal<para><emphasis>Motorcycle radar signal.</emphasis></para></para>
+                        <para>RadarSignal_t * motorcycleRadarSignal<para><emphasis>Pointer to a motorcycle radar signal.</emphasis></para></para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>GpsSignal_t * motorcycleGpsSignal<para><emphasis>Motorcycle GPS signal.</emphasis></para></para>
+                        <para>GpsSignal_t * motorcycleGpsSignal<para><emphasis>Pointer to a motorcycle GPS signal.</emphasis></para></para>
                     </listitem>
                 </itemizedlist>
             </para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>GpsSignal_t * carGpsSignal<para><emphasis>Car GPS signal.</emphasis></para></para>
+                        <para>GpsSignal_t * carGpsSignal<para><emphasis>Pointer to a car GPS signal.</emphasis></para></para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -54,7 +54,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>static const unsigned int DANGER_ZONE<para><emphasis>Threat zone in feet.</emphasis></para></para>
+                        <para>static const unsigned int SAFETY_ZONE</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -150,6 +150,14 @@ void )</para>
 
 <para>Class declaration for the Motorcycle Awareness System (MAS) </para>
     </simplesect>
+            <simplesect>
+                <title>const unsigned int MotorcycleAwarenessSystem::SAFETY_ZONE</title>                
+<para>Distance from the radar sensor in feet in which a detected object becomes a potential danger </para>
+
+                <para>Definition at line 24 of file MotorcycleAwarenessSystem.hpp</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MotorcycleAwarenessSystem.hpp</para></listitem></itemizedlist></para>
+            </simplesect>
             <section xml:id="classMotorcycleAwarenessSystem_1ab0fb3823809dc056fecc82cc72a80a55">
                 <title>MotorcycleAwarenessSystem::MotorcycleAwarenessSystem (VehicleType vehicleType)</title> <emphasis>Constructor.</emphasis>
                 
@@ -177,15 +185,17 @@ void )</para>
                 
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1a35d59c8299b0d5ef43c10306cc7f2ee1">
-                <title>bool MotorcycleAwarenessSystem::IsHazardPresent (void)</title> <emphasis>Method to determine whether a hazard is within the danger zone of the motorcycle.</emphasis>
+                <title>bool MotorcycleAwarenessSystem::IsHazardPresent (void)</title> <emphasis></emphasis>
                 
+<para>Method to determine whether a hazard is within the motorcycle&apos;s safety zone. An object within the safety zone is of potential danger to the motorcycle rider. </para>
+
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1a4e6eec23ec46e24ee377a3c94e15eba4">
                 <title>void MotorcycleAwarenessSystem::TrackMotorcycle (void)</title> <emphasis>Method to track the motorcycle using its GPS signal.</emphasis>
                 
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1aec5e4731c6bf0789821ba2793918e3ee">
-                <title>void MotorcycleAwarenessSystem::RelayWarningToOperator (void)</title> <emphasis>Method to relay a warning to operator via bluetooth.</emphasis>
+                <title>void MotorcycleAwarenessSystem::RelayWarningToOperator (void)</title> <emphasis>Method to relay a warning to operator via bluetooth connectivity.</emphasis>
                 
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1a840a5bc17d75276ecdb3a39d7aaf4109">

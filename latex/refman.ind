@@ -1,0 +1,222 @@
+\begin{theindex}
+
+  \item {$\sim $\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{8}
+
+  \indexspace
+
+  \item {Blue\discretionary {-}{}{}Tooth\discretionary {-}{}{}Message\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{3}
+    \subitem {data\discretionary {-}{}{}Buffer}, \hyperpage{3}
+    \subitem {is\discretionary {-}{}{}Hazard\discretionary {-}{}{}Present}, 
+		\hyperpage{3}
+  \item {bus\discretionary {-}{}{}Data}
+    \subitem {Can\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{4}
+
+  \indexspace
+
+  \item {C\-A\-R}
+    \subitem {Motorcycle\-Awareness\-System\-Types.\-hpp}, 
+		\hyperpage{25}
+  \item {can\discretionary {-}{}{}Signal}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{13}
+  \item {Can\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{4}
+    \subitem {bus\discretionary {-}{}{}Data}, \hyperpage{4}
+    \subitem {is\discretionary {-}{}{}Blinker\discretionary {-}{}{}On}, 
+		\hyperpage{5}
+  \item {car\discretionary {-}{}{}Gps\discretionary {-}{}{}Signal}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{13}
+  \item {Coordinate\discretionary {-}{}{}\_\discretionary {-}{}{}t}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+  \item {current\discretionary {-}{}{}Time}
+    \subitem {Gps\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+  \item {current\discretionary {-}{}{}Time\discretionary {-}{}{}\_\discretionary {-}{}{}t}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {data\discretionary {-}{}{}Buffer}
+    \subitem {Blue\discretionary {-}{}{}Tooth\discretionary {-}{}{}Message\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{3}
+  \item {data\discretionary {-}{}{}Packet}
+    \subitem {Motor\discretionary {-}{}{}Cycle\discretionary {-}{}{}Location\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+  \item {Data\discretionary {-}{}{}Packet\discretionary {-}{}{}\_\discretionary {-}{}{}t}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+
+  \indexspace
+
+  \item {Get\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}Location}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{9}
+  \item {Gps\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+    \subitem {current\discretionary {-}{}{}Time}, \hyperpage{6}
+    \subitem {x}, \hyperpage{6}
+    \subitem {y}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Initialize}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{9}
+  \item {is\discretionary {-}{}{}Blinker\discretionary {-}{}{}On}
+    \subitem {Can\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{5}
+  \item {Is\discretionary {-}{}{}Hazard\discretionary {-}{}{}Present}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{9}
+  \item {is\discretionary {-}{}{}Hazard\discretionary {-}{}{}Present}
+    \subitem {Blue\discretionary {-}{}{}Tooth\discretionary {-}{}{}Message\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{3}
+  \item {Is\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}In\discretionary {-}{}{}Range}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{10}
+  \item {Is\discretionary {-}{}{}Vehicle\discretionary {-}{}{}Blinker\discretionary {-}{}{}On}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item {M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}
+    \subitem {Motorcycle\-Awareness\-System\-Types.\-hpp}, 
+		\hyperpage{25}
+  \item {main}
+    \subitem {main.\discretionary {-}{}{}cpp}, \hyperpage{17}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{17}
+    \subitem {main}, \hyperpage{17}
+  \item {mainpage.\discretionary {-}{}{}dox}, \hyperpage{19}
+  \item {Monitor\discretionary {-}{}{}Conditions}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{11}
+  \item {Motor\discretionary {-}{}{}Cycle\discretionary {-}{}{}Location\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{14}
+    \subitem {data\discretionary {-}{}{}Packet}, \hyperpage{15}
+  \item {Motorcycle\-Awareness\-System\-Types.\-hpp}
+    \subitem {C\-A\-R}, \hyperpage{25}
+    \subitem {M\-O\-T\-O\-R\-C\-Y\-C\-L\-E}, \hyperpage{25}
+  \item {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{6}
+    \subitem {$\sim $\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{8}
+    \subitem {can\discretionary {-}{}{}Signal}, \hyperpage{13}
+    \subitem {car\discretionary {-}{}{}Gps\discretionary {-}{}{}Signal}, 
+		\hyperpage{13}
+    \subitem {Get\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}Location}, 
+		\hyperpage{9}
+    \subitem {Initialize}, \hyperpage{9}
+    \subitem {Is\discretionary {-}{}{}Hazard\discretionary {-}{}{}Present}, 
+		\hyperpage{9}
+    \subitem {Is\discretionary {-}{}{}Motorcycle\discretionary {-}{}{}In\discretionary {-}{}{}Range}, 
+		\hyperpage{10}
+    \subitem {Is\discretionary {-}{}{}Vehicle\discretionary {-}{}{}Blinker\discretionary {-}{}{}On}, 
+		\hyperpage{11}
+    \subitem {Monitor\discretionary {-}{}{}Conditions}, \hyperpage{11}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{8}
+    \subitem {motorcycle\discretionary {-}{}{}Gps\discretionary {-}{}{}Signal}, 
+		\hyperpage{13}
+    \subitem {motorcycle\discretionary {-}{}{}Location}, \hyperpage{14}
+    \subitem {motorcycle\discretionary {-}{}{}Radar\discretionary {-}{}{}Signal}, 
+		\hyperpage{14}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{8}
+    \subitem {Relay\discretionary {-}{}{}Warning\discretionary {-}{}{}To\discretionary {-}{}{}Operator}, 
+		\hyperpage{12}
+    \subitem {S\discretionary {-}{}{}A\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}Y\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Z\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}E}, 
+		\hyperpage{14}
+    \subitem {Track\discretionary {-}{}{}Motorcycle}, \hyperpage{13}
+    \subitem {vehicle\discretionary {-}{}{}Type}, \hyperpage{14}
+  \item {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System.\discretionary {-}{}{}cpp}, 
+		\hyperpage{19}
+  \item {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System.\discretionary {-}{}{}hpp}, 
+		\hyperpage{21}
+  \item {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{23}
+    \subitem {Coordinate\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{25}
+    \subitem {current\discretionary {-}{}{}Time\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{25}
+    \subitem {Data\discretionary {-}{}{}Packet\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{25}
+    \subitem {Object\discretionary {-}{}{}Distance}, \hyperpage{25}
+    \subitem {Object\discretionary {-}{}{}Velocity}, \hyperpage{25}
+    \subitem {Vehicle\discretionary {-}{}{}Type}, \hyperpage{25}
+  \item {motorcycle\discretionary {-}{}{}Gps\discretionary {-}{}{}Signal}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{13}
+  \item {motorcycle\discretionary {-}{}{}Location}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{14}
+  \item {motorcycle\discretionary {-}{}{}Radar\discretionary {-}{}{}Signal}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Object\discretionary {-}{}{}Distance}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+  \item {object\discretionary {-}{}{}Distance}
+    \subitem {Radar\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+  \item {Object\discretionary {-}{}{}Velocity}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+  \item {object\discretionary {-}{}{}Velocity}
+    \subitem {Radar\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{16}
+
+  \indexspace
+
+  \item {Radar\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{15}
+    \subitem {object\discretionary {-}{}{}Distance}, \hyperpage{16}
+    \subitem {object\discretionary {-}{}{}Velocity}, \hyperpage{16}
+  \item {Relay\discretionary {-}{}{}Warning\discretionary {-}{}{}To\discretionary {-}{}{}Operator}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{12}
+
+  \indexspace
+
+  \item {S\discretionary {-}{}{}A\discretionary {-}{}{}F\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}Y\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Z\discretionary {-}{}{}O\discretionary {-}{}{}N\discretionary {-}{}{}E}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {Track\discretionary {-}{}{}Motorcycle}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{13}
+
+  \indexspace
+
+  \item {Vehicle\discretionary {-}{}{}Type}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System\discretionary {-}{}{}Types.\discretionary {-}{}{}hpp}, 
+		\hyperpage{25}
+  \item {vehicle\discretionary {-}{}{}Type}
+    \subitem {Motorcycle\discretionary {-}{}{}Awareness\discretionary {-}{}{}System}, 
+		\hyperpage{14}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Gps\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Gps\discretionary {-}{}{}Signal\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{6}
+
+\end{theindex}

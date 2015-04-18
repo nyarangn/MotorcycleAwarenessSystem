@@ -1,7 +1,7 @@
 <map id="MotorcycleAwarenessSystem::MonitorConditions" name="MotorcycleAwarenessSystem::MonitorConditions">
 <area shape="rect" id="node2" href="$classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4" title="Method to track the motorcycle using its GPS signal. " alt="" coords="251,5,447,46"/>
-<area shape="rect" id="node3" href="$classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="Method to determine whether a hazard is within the danger zone of the motorcycle. ..." alt="" coords="251,70,447,111"/>
-<area shape="rect" id="node4" href="$classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth. " alt="" coords="251,135,447,177"/>
+<area shape="rect" id="node3" href="$classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="MotorcycleAwarenessSystem\l::IsHazardPresent" alt="" coords="251,70,447,111"/>
+<area shape="rect" id="node4" href="$classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth connectivity. " alt="" coords="251,135,447,177"/>
 <area shape="rect" id="node5" href="$classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348" title="Method to determine whether the car&#39;s blinker is ON. " alt="" coords="251,201,447,242"/>
 <area shape="rect" id="node6" href="$classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892" title="Method to determine whether the motorcycle is within the car&#39;s range. " alt="" coords="251,266,447,307"/>
 <area shape="rect" id="node7" href="$classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109" title="MotorcycleAwarenessSystem\l::GetMotorcycleLocation" alt="" coords="497,266,693,307"/>

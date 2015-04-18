@@ -77,8 +77,8 @@ bool MotorcycleAwarenessSystem::IsMotorcycleInRange( void )
     bool isInRange = false;
 
     // Determine where the motorcycle is relative to the car using the GPS signals
-    if ( ((abs( this->carGpsSignal->x ) + DANGER_ZONE) >= abs( this->motorcycleGpsSignal->x )) ||
-         ((abs( this->carGpsSignal->y ) + DANGER_ZONE) >= abs( this->motorcycleGpsSignal->y )))
+    if ( ((abs( this->carGpsSignal->x ) + SAFETY_ZONE) >= abs( this->motorcycleGpsSignal->x )) ||
+         ((abs( this->carGpsSignal->y ) + SAFETY_ZONE) >= abs( this->motorcycleGpsSignal->y )))
     {
         isInRange = true;
     }
@@ -92,12 +92,13 @@ bool MotorcycleAwarenessSystem::IsMotorcycleInRange( void )
     return isInRange;
 }
 
-/// Method to determine whether a hazard is within the danger zone of the motorcycle
+/// Method to determine whether a hazard is within the motorcycle's safety zone.
+/// An object within the safety zone is of potential danger to the motorcycle rider.
 bool MotorcycleAwarenessSystem::IsHazardPresent( void )
 {
     bool isHazardPresent = false;
 
-    if ( abs( this->motorcycleRadarSignal->objectDistance ) >= DANGER_ZONE )
+    if ( abs( this->motorcycleRadarSignal->objectDistance ) >= SAFETY_ZONE )
     {
         isHazardPresent = true;
     }
@@ -112,7 +113,7 @@ void MotorcycleAwarenessSystem::TrackMotorcycle( void )
     motorcycleLocation.push_front( *motorcycleGpsSignal );
 }
 
-/// Method to relay a warning to operator via bluetooth
+/// Method to relay a warning to operator via bluetooth connectivity
 void MotorcycleAwarenessSystem::RelayWarningToOperator( void )
 {
     // Assemble the message to be sent

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vehicletype',['vehicleType',['../classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2',1,'MotorcycleAwarenessSystem']]]
+  ['safety_5fzone',['SAFETY_ZONE',['../classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e',1,'MotorcycleAwarenessSystem']]]
 ];

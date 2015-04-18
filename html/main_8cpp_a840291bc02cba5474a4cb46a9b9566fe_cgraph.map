@@ -2,8 +2,8 @@
 <area shape="rect" id="node2" href="$classMotorcycleAwarenessSystem.html#a55f1ea16b6311120ea42b460fb8b3a71" title="Method to initialize the MAS system. " alt="" coords="105,70,301,111"/>
 <area shape="rect" id="node3" href="$classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e" title="Method to continuously monitor the conditions during run&#45;time. " alt="" coords="105,135,301,177"/>
 <area shape="rect" id="node4" href="$classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4" title="Method to track the motorcycle using its GPS signal. " alt="" coords="350,5,546,46"/>
-<area shape="rect" id="node5" href="$classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="Method to determine whether a hazard is within the danger zone of the motorcycle. ..." alt="" coords="350,70,546,111"/>
-<area shape="rect" id="node6" href="$classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth. " alt="" coords="350,135,546,177"/>
+<area shape="rect" id="node5" href="$classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="MotorcycleAwarenessSystem\l::IsHazardPresent" alt="" coords="350,70,546,111"/>
+<area shape="rect" id="node6" href="$classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth connectivity. " alt="" coords="350,135,546,177"/>
 <area shape="rect" id="node7" href="$classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348" title="Method to determine whether the car&#39;s blinker is ON. " alt="" coords="350,201,546,242"/>
 <area shape="rect" id="node8" href="$classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892" title="Method to determine whether the motorcycle is within the car&#39;s range. " alt="" coords="350,266,546,307"/>
 <area shape="rect" id="node9" href="$classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109" title="MotorcycleAwarenessSystem\l::GetMotorcycleLocation" alt="" coords="595,266,791,307"/>

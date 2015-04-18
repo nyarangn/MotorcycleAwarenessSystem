@@ -1,4 +1,4 @@
-\hypertarget{classMotorcycleAwarenessSystem}{\section{Motorcycle\-Awareness\-System Class Reference}
+\hypertarget{classMotorcycleAwarenessSystem}{\subsection{Motorcycle\-Awareness\-System Class Reference}
 \label{classMotorcycleAwarenessSystem}\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}}
 }
 
@@ -19,7 +19,7 @@ Collaboration diagram for Motorcycle\-Awareness\-System\-:\nopagebreak
 \includegraphics[width=350pt]{classMotorcycleAwarenessSystem__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\subsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classMotorcycleAwarenessSystem_ab0fb3823809dc056fecc82cc72a80a55}{Motorcycle\-Awareness\-System} (\hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{Vehicle\-Type} \hyperlink{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{vehicle\-Type})
@@ -30,7 +30,7 @@ void \hyperlink{classMotorcycleAwarenessSystem_a55f1ea16b6311120ea42b460fb8b3a71
 \begin{DoxyCompactList}\small\item\em Method to initialize the M\-A\-S system. \end{DoxyCompactList}\item 
 void \hyperlink{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{Monitor\-Conditions} (void)
 \begin{DoxyCompactList}\small\item\em Method to continuously monitor the conditions during run-\/time. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Member Functions}
+\subsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 bool \hyperlink{classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348}{Is\-Vehicle\-Blinker\-On} (void)
@@ -38,47 +38,47 @@ bool \hyperlink{classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348
 bool \hyperlink{classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892}{Is\-Motorcycle\-In\-Range} (void)
 \begin{DoxyCompactList}\small\item\em Method to determine whether the motorcycle is within the car's range. \end{DoxyCompactList}\item 
 bool \hyperlink{classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1}{Is\-Hazard\-Present} (void)
-\begin{DoxyCompactList}\small\item\em Method to determine whether a hazard is within the danger zone of the motorcycle. \end{DoxyCompactList}\item 
+\item 
 void \hyperlink{classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4}{Track\-Motorcycle} (void)
 \begin{DoxyCompactList}\small\item\em Method to track the motorcycle using its G\-P\-S signal. \end{DoxyCompactList}\item 
 void \hyperlink{classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee}{Relay\-Warning\-To\-Operator} (void)
-\begin{DoxyCompactList}\small\item\em Method to relay a warning to operator via bluetooth. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Method to relay a warning to operator via bluetooth connectivity. \end{DoxyCompactList}\item 
 \hyperlink{structMotorCycleLocation__t}{Motor\-Cycle\-Location\-\_\-t} \hyperlink{classMotorcycleAwarenessSystem_a840a5bc17d75276ecdb3a39d7aaf4109}{Get\-Motorcycle\-Location} (void)
 \end{DoxyCompactItemize}
-\subsection*{Private Attributes}
+\subsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\-::list$<$ \hyperlink{structGpsSignal__t}{Gps\-Signal\-\_\-t} $>$ \hyperlink{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{motorcycle\-Location}
-\begin{DoxyCompactList}\small\item\em Container to track the motorcycle's location. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Container used to track the motorcycle's location. \end{DoxyCompactList}\item 
 \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{Vehicle\-Type} \hyperlink{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{vehicle\-Type}
 \begin{DoxyCompactList}\small\item\em The vehicle type (motorcycle or car) \end{DoxyCompactList}\item 
 std\-::map$<$ \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{Vehicle\-Type}, \\*
 \hyperlink{structCanSignal__t}{Can\-Signal\-\_\-t} $\ast$ $>$ \hyperlink{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{can\-Signal}
 \begin{DoxyCompactList}\small\item\em Storage for the C\-A\-N signals. \end{DoxyCompactList}\item 
 \hyperlink{structRadarSignal__t}{Radar\-Signal\-\_\-t} $\ast$ \hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycle\-Radar\-Signal}
-\begin{DoxyCompactList}\small\item\em Motorcycle radar signal. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pointer to a motorcycle radar signal. \end{DoxyCompactList}\item 
 \hyperlink{structGpsSignal__t}{Gps\-Signal\-\_\-t} $\ast$ \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycle\-Gps\-Signal}
-\begin{DoxyCompactList}\small\item\em Motorcycle G\-P\-S signal. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Pointer to a motorcycle G\-P\-S signal. \end{DoxyCompactList}\item 
 \hyperlink{structGpsSignal__t}{Gps\-Signal\-\_\-t} $\ast$ \hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{car\-Gps\-Signal}
-\begin{DoxyCompactList}\small\item\em Car G\-P\-S signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Private Attributes}
+\begin{DoxyCompactList}\small\item\em Pointer to a car G\-P\-S signal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsubsection*{Static Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const unsigned int \hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E} = 15\-U
-\begin{DoxyCompactList}\small\item\em Threat zone in feet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static const unsigned int \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E} = 15\-U
+\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsubsection{Detailed Description}
 Class declaration for the Motorcycle Awareness System (M\-A\-S) 
 
 Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00012}{12} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
+\subsubsection{Constructor \& Destructor Documentation}
 \hypertarget{classMotorcycleAwarenessSystem_ab0fb3823809dc056fecc82cc72a80a55}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}}
 \index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Motorcycle\-Awareness\-System}]{\setlength{\rightskip}{0pt plus 5cm}Motorcycle\-Awareness\-System\-::\-Motorcycle\-Awareness\-System (
+\paragraph[{Motorcycle\-Awareness\-System}]{\setlength{\rightskip}{0pt plus 5cm}Motorcycle\-Awareness\-System\-::\-Motorcycle\-Awareness\-System (
 \begin{DoxyParamCaption}
 \item[{{\bf Vehicle\-Type}}]{vehicle\-Type}
 \end{DoxyParamCaption}
@@ -100,7 +100,7 @@ Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00013}{13} 
 \end{DoxyCode}
 \hypertarget{classMotorcycleAwarenessSystem_a89ce16a722b3575e1415cbe9c7eedbd3}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!$\sim$\-Motorcycle\-Awareness\-System@{$\sim$\-Motorcycle\-Awareness\-System}}
 \index{$\sim$\-Motorcycle\-Awareness\-System@{$\sim$\-Motorcycle\-Awareness\-System}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{$\sim$\-Motorcycle\-Awareness\-System}]{\setlength{\rightskip}{0pt plus 5cm}Motorcycle\-Awareness\-System\-::$\sim$\-Motorcycle\-Awareness\-System (
+\paragraph[{$\sim$\-Motorcycle\-Awareness\-System}]{\setlength{\rightskip}{0pt plus 5cm}Motorcycle\-Awareness\-System\-::$\sim$\-Motorcycle\-Awareness\-System (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -121,10 +121,10 @@ Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00020}{20} 
 \end{DoxyCode}
 
 
-\subsection{Member Function Documentation}
+\subsubsection{Member Function Documentation}
 \hypertarget{classMotorcycleAwarenessSystem_a840a5bc17d75276ecdb3a39d7aaf4109}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Get\-Motorcycle\-Location@{Get\-Motorcycle\-Location}}
 \index{Get\-Motorcycle\-Location@{Get\-Motorcycle\-Location}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Get\-Motorcycle\-Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor\-Cycle\-Location\-\_\-t} Motorcycle\-Awareness\-System\-::\-Get\-Motorcycle\-Location (
+\paragraph[{Get\-Motorcycle\-Location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor\-Cycle\-Location\-\_\-t} Motorcycle\-Awareness\-System\-::\-Get\-Motorcycle\-Location (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -133,16 +133,16 @@ Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00020}{20} 
 \item[\hyperlink{todo__todo000003}{Todo}]Acquire the data packet from the motorcycle \end{DoxyRefDesc}
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00128}{128} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00129}{129} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
 
 
 \begin{DoxyCode}
-00129 \{
-00130     \textcolor{comment}{// Dummy motorcycle location from V2V communication}
-00131     \hyperlink{structMotorCycleLocation__t}{MotorCycleLocation\_t} motorCycleLocation;
-00133 
-00134     \textcolor{keywordflow}{return} motorCycleLocation;
-00135 \}
+00130 \{
+00131     \textcolor{comment}{// Dummy motorcycle location from V2V communication}
+00132     \hyperlink{structMotorCycleLocation__t}{MotorCycleLocation\_t} motorCycleLocation;
+00134 
+00135     \textcolor{keywordflow}{return} motorCycleLocation;
+00136 \}
 \end{DoxyCode}
 
 
@@ -157,7 +157,7 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_a55f1ea16b6311120ea42b460fb8b3a71}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Initialize@{Initialize}}
 \index{Initialize@{Initialize}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Initialize (
+\paragraph[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Initialize (
 \begin{DoxyParamCaption}
 \item[{{\bf Can\-Signal\-\_\-t} $\ast$}]{motorcycle\-Can\-Signal, }
 \item[{{\bf Can\-Signal\-\_\-t} $\ast$}]{car\-Can\-Signal, }
@@ -202,32 +202,28 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Is\-Hazard\-Present@{Is\-Hazard\-Present}}
 \index{Is\-Hazard\-Present@{Is\-Hazard\-Present}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Is\-Hazard\-Present}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Hazard\-Present (
+\paragraph[{Is\-Hazard\-Present}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Hazard\-Present (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1}
+Method to determine whether a hazard is within the motorcycle's safety zone. An object within the safety zone is of potential danger to the motorcycle rider. 
 
-
-Method to determine whether a hazard is within the danger zone of the motorcycle. 
-
-
-
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00096}{96} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00097}{97} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
 
 
 \begin{DoxyCode}
-00097 \{
-00098     \textcolor{keywordtype}{bool} isHazardPresent = \textcolor{keyword}{false};
-00099 
-00100     \textcolor{keywordflow}{if} ( abs( this->\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}->\hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{objectDistance} ) >= 
-      \hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{DANGER\_ZONE} )
-00101     \{
-00102         isHazardPresent = \textcolor{keyword}{true};
-00103     \}
-00104 
-00105     \textcolor{keywordflow}{return} isHazardPresent;
-00106 \}
+00098 \{
+00099     \textcolor{keywordtype}{bool} isHazardPresent = \textcolor{keyword}{false};
+00100 
+00101     \textcolor{keywordflow}{if} ( abs( this->\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}->\hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{objectDistance} ) >= 
+      \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE} )
+00102     \{
+00103         isHazardPresent = \textcolor{keyword}{true};
+00104     \}
+00105 
+00106     \textcolor{keywordflow}{return} isHazardPresent;
+00107 \}
 \end{DoxyCode}
 
 
@@ -242,7 +238,7 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Is\-Motorcycle\-In\-Range@{Is\-Motorcycle\-In\-Range}}
 \index{Is\-Motorcycle\-In\-Range@{Is\-Motorcycle\-In\-Range}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Is\-Motorcycle\-In\-Range}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Motorcycle\-In\-Range (
+\paragraph[{Is\-Motorcycle\-In\-Range}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Motorcycle\-In\-Range (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -263,9 +259,9 @@ Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00075}{75} 
 00077     \textcolor{keywordtype}{bool} isInRange = \textcolor{keyword}{false};
 00078 
 00079     \textcolor{comment}{// Determine where the motorcycle is relative to the car using the GPS signals}
-00080     \textcolor{keywordflow}{if} ( ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x} ) + \hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{DANGER\_ZONE}) >= abs( this->
+00080     \textcolor{keywordflow}{if} ( ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x} ) + \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE}) >= abs( this->
       \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x} )) ||
-00081          ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y} ) + \hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{DANGER\_ZONE}) >= abs( this->
+00081          ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y} ) + \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE}) >= abs( this->
       \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y} )))
 00082     \{
 00083         isInRange = \textcolor{keyword}{true};
@@ -304,7 +300,7 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Is\-Vehicle\-Blinker\-On@{Is\-Vehicle\-Blinker\-On}}
 \index{Is\-Vehicle\-Blinker\-On@{Is\-Vehicle\-Blinker\-On}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Is\-Vehicle\-Blinker\-On}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Vehicle\-Blinker\-On (
+\paragraph[{Is\-Vehicle\-Blinker\-On}]{\setlength{\rightskip}{0pt plus 5cm}bool Motorcycle\-Awareness\-System\-::\-Is\-Vehicle\-Blinker\-On (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -336,7 +332,7 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Monitor\-Conditions@{Monitor\-Conditions}}
 \index{Monitor\-Conditions@{Monitor\-Conditions}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Monitor\-Conditions}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Monitor\-Conditions (
+\paragraph[{Monitor\-Conditions}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Monitor\-Conditions (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -400,31 +396,31 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Relay\-Warning\-To\-Operator@{Relay\-Warning\-To\-Operator}}
 \index{Relay\-Warning\-To\-Operator@{Relay\-Warning\-To\-Operator}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Relay\-Warning\-To\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Relay\-Warning\-To\-Operator (
+\paragraph[{Relay\-Warning\-To\-Operator}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Relay\-Warning\-To\-Operator (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee}
 
 
-Method to relay a warning to operator via bluetooth. 
+Method to relay a warning to operator via bluetooth connectivity. 
 
 \begin{DoxyRefDesc}{Todo}
 \item[\hyperlink{todo__todo000002}{Todo}]Transmit the bluetooth message to the operator \end{DoxyRefDesc}
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00116}{116} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00117}{117} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
 
 
 \begin{DoxyCode}
-00117 \{
-00118     \textcolor{comment}{// Assemble the message to be sent}
-00119     \hyperlink{structBlueToothMessage__t}{BlueToothMessage\_t} blueToothMessage;
-00120     blueToothMessage.\hyperlink{structBlueToothMessage__t_a2dd315aa1cba1d2d3045e26b9f171e61}{isHazardPresent} = \textcolor{keyword}{true};
-00121     \textcolor{comment}{// Dummy message}
-00122     blueToothMessage.\hyperlink{structBlueToothMessage__t_ab872789a32f068dae8bcf77122256b78}{dataBuffer}[0] = 0x2015;
-00123 
-00125 \}
+00118 \{
+00119     \textcolor{comment}{// Assemble the message to be sent}
+00120     \hyperlink{structBlueToothMessage__t}{BlueToothMessage\_t} blueToothMessage;
+00121     blueToothMessage.\hyperlink{structBlueToothMessage__t_a2dd315aa1cba1d2d3045e26b9f171e61}{isHazardPresent} = \textcolor{keyword}{true};
+00122     \textcolor{comment}{// Dummy message}
+00123     blueToothMessage.\hyperlink{structBlueToothMessage__t_ab872789a32f068dae8bcf77122256b78}{dataBuffer}[0] = 0x2015;
+00124 
+00126 \}
 \end{DoxyCode}
 
 
@@ -439,7 +435,7 @@ Here is the caller graph for this function\-:\nopagebreak
 
 \hypertarget{classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!Track\-Motorcycle@{Track\-Motorcycle}}
 \index{Track\-Motorcycle@{Track\-Motorcycle}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{Track\-Motorcycle}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Track\-Motorcycle (
+\paragraph[{Track\-Motorcycle}]{\setlength{\rightskip}{0pt plus 5cm}void Motorcycle\-Awareness\-System\-::\-Track\-Motorcycle (
 \begin{DoxyParamCaption}
 \item[{void}]{}
 \end{DoxyParamCaption}
@@ -450,14 +446,14 @@ Method to track the motorcycle using its G\-P\-S signal.
 
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00109}{109} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8cpp_source_l00110}{110} of file \hyperlink{MotorcycleAwarenessSystem_8cpp_source}{Motorcycle\-Awareness\-System.\-cpp}.
 
 
 \begin{DoxyCode}
-00110 \{
-00111     \textcolor{comment}{// Push the motorcycle's GPS location onto the list}
-00112     \hyperlink{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{motorcycleLocation}.push\_front( *\hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal} );
-00113 \}
+00111 \{
+00112     \textcolor{comment}{// Push the motorcycle's GPS location onto the list}
+00113     \hyperlink{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{motorcycleLocation}.push\_front( *\hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal} );
+00114 \}
 \end{DoxyCode}
 
 
@@ -472,57 +468,46 @@ Here is the caller graph for this function\-:\nopagebreak
 
 
 
-\subsection{Member Data Documentation}
+\subsubsection{Member Data Documentation}
 \hypertarget{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!can\-Signal@{can\-Signal}}
 \index{can\-Signal@{can\-Signal}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{can\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<${\bf Vehicle\-Type}, {\bf Can\-Signal\-\_\-t}$\ast$$>$ Motorcycle\-Awareness\-System\-::can\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}
+\paragraph[{can\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<${\bf Vehicle\-Type}, {\bf Can\-Signal\-\_\-t}$\ast$$>$ Motorcycle\-Awareness\-System\-::can\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}
 
 
 Storage for the C\-A\-N signals. 
 
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00026}{26} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00027}{27} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
 
 \hypertarget{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!car\-Gps\-Signal@{car\-Gps\-Signal}}
 \index{car\-Gps\-Signal@{car\-Gps\-Signal}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{car\-Gps\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gps\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::car\-Gps\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}
+\paragraph[{car\-Gps\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gps\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::car\-Gps\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}
 
 
-Car G\-P\-S signal. 
+Pointer to a car G\-P\-S signal. 
+
+
+
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00030}{30} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
+
+\hypertarget{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!motorcycle\-Gps\-Signal@{motorcycle\-Gps\-Signal}}
+\index{motorcycle\-Gps\-Signal@{motorcycle\-Gps\-Signal}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
+\paragraph[{motorcycle\-Gps\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gps\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::motorcycle\-Gps\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}
+
+
+Pointer to a motorcycle G\-P\-S signal. 
 
 
 
 Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00029}{29} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
 
-\hypertarget{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E@{D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E}}
-\index{D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E@{D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Motorcycle\-Awareness\-System\-::\-D\-A\-N\-G\-E\-R\-\_\-\-Z\-O\-N\-E = 15\-U\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}
-
-
-Threat zone in feet. 
-
-
-
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00024}{24} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
-
-\hypertarget{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!motorcycle\-Gps\-Signal@{motorcycle\-Gps\-Signal}}
-\index{motorcycle\-Gps\-Signal@{motorcycle\-Gps\-Signal}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{motorcycle\-Gps\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gps\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::motorcycle\-Gps\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}
-
-
-Motorcycle G\-P\-S signal. 
-
-
-
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00028}{28} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
-
 \hypertarget{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!motorcycle\-Location@{motorcycle\-Location}}
 \index{motorcycle\-Location@{motorcycle\-Location}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{motorcycle\-Location}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Gps\-Signal\-\_\-t}$>$ Motorcycle\-Awareness\-System\-::motorcycle\-Location\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}
+\paragraph[{motorcycle\-Location}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<${\bf Gps\-Signal\-\_\-t}$>$ Motorcycle\-Awareness\-System\-::motorcycle\-Location\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}
 
 
-Container to track the motorcycle's location. 
+Container used to track the motorcycle's location. 
 
 
 
@@ -530,25 +515,32 @@ Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00023}{23} 
 
 \hypertarget{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!motorcycle\-Radar\-Signal@{motorcycle\-Radar\-Signal}}
 \index{motorcycle\-Radar\-Signal@{motorcycle\-Radar\-Signal}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{motorcycle\-Radar\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Radar\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::motorcycle\-Radar\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}
+\paragraph[{motorcycle\-Radar\-Signal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Radar\-Signal\-\_\-t}$\ast$ Motorcycle\-Awareness\-System\-::motorcycle\-Radar\-Signal\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}
 
 
-Motorcycle radar signal. 
+Pointer to a motorcycle radar signal. 
 
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00027}{27} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00028}{28} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
+
+\hypertarget{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E@{S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E}}
+\index{S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E@{S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
+\paragraph[{S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E}]{\setlength{\rightskip}{0pt plus 5cm}const unsigned int Motorcycle\-Awareness\-System\-::\-S\-A\-F\-E\-T\-Y\-\_\-\-Z\-O\-N\-E = 15\-U\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}
+Distance from the radar sensor in feet in which a detected object becomes a potential danger 
+
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00024}{24} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
 
 \hypertarget{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{\index{Motorcycle\-Awareness\-System@{Motorcycle\-Awareness\-System}!vehicle\-Type@{vehicle\-Type}}
 \index{vehicle\-Type@{vehicle\-Type}!MotorcycleAwarenessSystem@{Motorcycle\-Awareness\-System}}
-\subsubsection[{vehicle\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Type} Motorcycle\-Awareness\-System\-::vehicle\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}
+\paragraph[{vehicle\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Type} Motorcycle\-Awareness\-System\-::vehicle\-Type\hspace{0.3cm}{\ttfamily [private]}}}\label{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}
 
 
 The vehicle type (motorcycle or car) 
 
 
 
-Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00025}{25} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
+Definition at line \hyperlink{MotorcycleAwarenessSystem_8hpp_source_l00026}{26} of file \hyperlink{MotorcycleAwarenessSystem_8hpp_source}{Motorcycle\-Awareness\-System.\-hpp}.
 
 
 

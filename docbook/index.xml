@@ -3,6 +3,7 @@
     <info>
     <title>Motorcycle Awareness System (MAS)</title>
     </info>
+        <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="todo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <chapter>
         <title>Class Documentation</title>
@@ -16,6 +17,7 @@
     <chapter>
         <title>File Documentation</title>
         <xi:include href="main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mainpage_8dox.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="MotorcycleAwarenessSystem_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="MotorcycleAwarenessSystem_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="MotorcycleAwarenessSystemTypes_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

@@ -1,4 +1,4 @@
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source}{\section{Motorcycle\-Awareness\-System.\-hpp}
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source}{\subsection{Motorcycle\-Awareness\-System.\-hpp}
 }
 
 \begin{DoxyCode}
@@ -25,19 +25,19 @@
 00021 
 00022     \textcolor{keyword}{private}:
 \hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00023}{}\hyperlink{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{00023}         std::list<GpsSignal\_t> \hyperlink{classMotorcycleAwarenessSystem_af6becfeb1d11b467cb80a94a8e6940ac}{motorcycleLocation}; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00024}{}\hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{00024}         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{classMotorcycleAwarenessSystem_abe0296f34c0ca2857a94659dfdc5801c}{DANGER\_ZONE} = 15U; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00025}{}\hyperlink{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{00025}         \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{VehicleType} \hyperlink{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{vehicleType}; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00026}{}\hyperlink{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{00026}         std::map<VehicleType, CanSignal\_t*> \hyperlink{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{canSignal}; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00027}{}\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{00027}         \hyperlink{structRadarSignal__t}{RadarSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00028}{}\hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{00028}         \hyperlink{structGpsSignal__t}{GpsSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}; 
-\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00029}{}\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{00029}         \hyperlink{structGpsSignal__t}{GpsSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}; 
-00030 
-00031         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348}{IsVehicleBlinkerOn}( \textcolor{keywordtype}{void} );
-00032         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892}{IsMotorcycleInRange}( \textcolor{keywordtype}{void} );
-00033         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1}{IsHazardPresent}( \textcolor{keywordtype}{void} );
-00034         \textcolor{keywordtype}{void} \hyperlink{classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4}{TrackMotorcycle}( \textcolor{keywordtype}{void} );
-00035         \textcolor{keywordtype}{void} \hyperlink{classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee}{RelayWarningToOperator}( \textcolor{keywordtype}{void} );
-00036         \hyperlink{structMotorCycleLocation__t}{MotorCycleLocation\_t} \hyperlink{classMotorcycleAwarenessSystem_a840a5bc17d75276ecdb3a39d7aaf4109}{GetMotorcycleLocation}( \textcolor{keywordtype}{void} );
-00037 \};
-00038 \textcolor{preprocessor}{#endif}
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00024}{}\hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{00024}         \textcolor{keyword}{static} \textcolor{keyword}{const} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE} = 15U; 
+00025         \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afa}{VehicleType} \hyperlink{classMotorcycleAwarenessSystem_a977b2085bfbf6a62902bf2d80160e6d2}{vehicleType}; 
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00027}{}\hyperlink{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{00027}         std::map<VehicleType, CanSignal\_t*> \hyperlink{classMotorcycleAwarenessSystem_a2d8ac602ae24dcf38aaa95a42ffb4e1f}{canSignal}; 
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00028}{}\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{00028}         \hyperlink{structRadarSignal__t}{RadarSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}; 
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00029}{}\hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{00029}         \hyperlink{structGpsSignal__t}{GpsSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}; 
+\hypertarget{MotorcycleAwarenessSystem_8hpp_source_l00030}{}\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{00030}         \hyperlink{structGpsSignal__t}{GpsSignal\_t}* \hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}; 
+00031 
+00032         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348}{IsVehicleBlinkerOn}( \textcolor{keywordtype}{void} );
+00033         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892}{IsMotorcycleInRange}( \textcolor{keywordtype}{void} );
+00034         \textcolor{keywordtype}{bool} \hyperlink{classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1}{IsHazardPresent}( \textcolor{keywordtype}{void} );
+00035         \textcolor{keywordtype}{void} \hyperlink{classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4}{TrackMotorcycle}( \textcolor{keywordtype}{void} );
+00036         \textcolor{keywordtype}{void} \hyperlink{classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee}{RelayWarningToOperator}( \textcolor{keywordtype}{void} );
+00037         \hyperlink{structMotorCycleLocation__t}{MotorCycleLocation\_t} \hyperlink{classMotorcycleAwarenessSystem_a840a5bc17d75276ecdb3a39d7aaf4109}{GetMotorcycleLocation}( \textcolor{keywordtype}{void} );
+00038 \};
+00039 \textcolor{preprocessor}{#endif}
 \end{DoxyCode}

@@ -20,13 +20,14 @@ class MotorcycleAwarenessSystem
         void MonitorConditions( void );
 
     private:
-        std::list<GpsSignal_t> motorcycleLocation; ///< Container to track the motorcycle's location
-        static const unsigned int DANGER_ZONE = 15U; ///< Threat zone in feet
+        std::list<GpsSignal_t> motorcycleLocation; ///< Container used to track the motorcycle's location
+        static const unsigned int SAFETY_ZONE = 15U; ///< Distance from the radar sensor in feet in which a detected
+                                                     ///  object becomes a potential danger
         VehicleType vehicleType; ///< The vehicle type (motorcycle or car)
         std::map<VehicleType, CanSignal_t*> canSignal; ///< Storage for the CAN signals
-        RadarSignal_t* motorcycleRadarSignal; ///< Motorcycle radar signal
-        GpsSignal_t* motorcycleGpsSignal; ///< Motorcycle GPS signal
-        GpsSignal_t* carGpsSignal; ///< Car GPS signal
+        RadarSignal_t* motorcycleRadarSignal; ///< Pointer to a motorcycle radar signal
+        GpsSignal_t* motorcycleGpsSignal; ///< Pointer to a motorcycle GPS signal
+        GpsSignal_t* carGpsSignal; ///< Pointer to a car GPS signal
 
         bool IsVehicleBlinkerOn( void );
         bool IsMotorcycleInRange( void );

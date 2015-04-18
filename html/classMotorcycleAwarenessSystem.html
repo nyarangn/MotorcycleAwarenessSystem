@@ -27,6 +27,7 @@
 });
 </script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="image_style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -129,7 +130,7 @@ Collaboration diagram for MotorcycleAwarenessSystem:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMotorcycleAwarenessSystem__coll__graph.png" border="0" usemap="#MotorcycleAwarenessSystem_coll__map" alt="Collaboration graph"/></div>
 <map name="MotorcycleAwarenessSystem_coll__map" id="MotorcycleAwarenessSystem_coll__map">
-<area shape="rect" id="node5" href="structRadarSignal__t.html" title="Structure that emulates a Radar signal. " alt="" coords="420,184,524,261"/><area shape="rect" id="node7" href="structGpsSignal__t.html" title="Structure that emulates a GPS signal. " alt="" coords="571,184,664,261"/></map>
+<area shape="rect" id="node5" href="structRadarSignal__t.html" title="Structure that emulates a Radar signal. " alt="" coords="415,184,519,261"/><area shape="rect" id="node7" href="structGpsSignal__t.html" title="Structure that emulates a GPS signal. " alt="" coords="565,184,659,261"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -156,13 +157,12 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a239655aca9c875b1dbbad3ce155c7892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to determine whether the motorcycle is within the car's range.  <a href="#a239655aca9c875b1dbbad3ce155c7892">More...</a><br/></td></tr>
 <tr class="separator:a239655aca9c875b1dbbad3ce155c7892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35d59c8299b0d5ef43c10306cc7f2ee1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1">IsHazardPresent</a> (void)</td></tr>
-<tr class="memdesc:a35d59c8299b0d5ef43c10306cc7f2ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to determine whether a hazard is within the danger zone of the motorcycle.  <a href="#a35d59c8299b0d5ef43c10306cc7f2ee1">More...</a><br/></td></tr>
 <tr class="separator:a35d59c8299b0d5ef43c10306cc7f2ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e6eec23ec46e24ee377a3c94e15eba4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4">TrackMotorcycle</a> (void)</td></tr>
 <tr class="memdesc:a4e6eec23ec46e24ee377a3c94e15eba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to track the motorcycle using its GPS signal.  <a href="#a4e6eec23ec46e24ee377a3c94e15eba4">More...</a><br/></td></tr>
 <tr class="separator:a4e6eec23ec46e24ee377a3c94e15eba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec5e4731c6bf0789821ba2793918e3ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee">RelayWarningToOperator</a> (void)</td></tr>
-<tr class="memdesc:aec5e4731c6bf0789821ba2793918e3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to relay a warning to operator via bluetooth.  <a href="#aec5e4731c6bf0789821ba2793918e3ee">More...</a><br/></td></tr>
+<tr class="memdesc:aec5e4731c6bf0789821ba2793918e3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to relay a warning to operator via bluetooth connectivity.  <a href="#aec5e4731c6bf0789821ba2793918e3ee">More...</a><br/></td></tr>
 <tr class="separator:aec5e4731c6bf0789821ba2793918e3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840a5bc17d75276ecdb3a39d7aaf4109"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109">GetMotorcycleLocation</a> (void)</td></tr>
 <tr class="separator:a840a5bc17d75276ecdb3a39d7aaf4109"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +170,7 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:af6becfeb1d11b467cb80a94a8e6940ac"><td class="memItemLeft" align="right" valign="top">std::list&lt; <a class="el" href="structGpsSignal__t.html">GpsSignal_t</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac">motorcycleLocation</a></td></tr>
-<tr class="memdesc:af6becfeb1d11b467cb80a94a8e6940ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container to track the motorcycle's location.  <a href="#af6becfeb1d11b467cb80a94a8e6940ac">More...</a><br/></td></tr>
+<tr class="memdesc:af6becfeb1d11b467cb80a94a8e6940ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container used to track the motorcycle's location.  <a href="#af6becfeb1d11b467cb80a94a8e6940ac">More...</a><br/></td></tr>
 <tr class="separator:af6becfeb1d11b467cb80a94a8e6940ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a977b2085bfbf6a62902bf2d80160e6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afa">VehicleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">vehicleType</a></td></tr>
 <tr class="memdesc:a977b2085bfbf6a62902bf2d80160e6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The vehicle type (motorcycle or car)  <a href="#a977b2085bfbf6a62902bf2d80160e6d2">More...</a><br/></td></tr>
@@ -180,20 +180,19 @@ Private Attributes</h2></td></tr>
 <tr class="memdesc:a2d8ac602ae24dcf38aaa95a42ffb4e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage for the CAN signals.  <a href="#a2d8ac602ae24dcf38aaa95a42ffb4e1f">More...</a><br/></td></tr>
 <tr class="separator:a2d8ac602ae24dcf38aaa95a42ffb4e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0744e71b9f440a86f5078c876ba7629b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structRadarSignal__t.html">RadarSignal_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">motorcycleRadarSignal</a></td></tr>
-<tr class="memdesc:a0744e71b9f440a86f5078c876ba7629b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motorcycle radar signal.  <a href="#a0744e71b9f440a86f5078c876ba7629b">More...</a><br/></td></tr>
+<tr class="memdesc:a0744e71b9f440a86f5078c876ba7629b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a motorcycle radar signal.  <a href="#a0744e71b9f440a86f5078c876ba7629b">More...</a><br/></td></tr>
 <tr class="separator:a0744e71b9f440a86f5078c876ba7629b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab281a3993b574923b2f379ed0477b2d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGpsSignal__t.html">GpsSignal_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a></td></tr>
-<tr class="memdesc:ab281a3993b574923b2f379ed0477b2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motorcycle GPS signal.  <a href="#ab281a3993b574923b2f379ed0477b2d4">More...</a><br/></td></tr>
+<tr class="memdesc:ab281a3993b574923b2f379ed0477b2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a motorcycle GPS signal.  <a href="#ab281a3993b574923b2f379ed0477b2d4">More...</a><br/></td></tr>
 <tr class="separator:ab281a3993b574923b2f379ed0477b2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a8185e00b60d0be58bfa76166063128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGpsSignal__t.html">GpsSignal_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a></td></tr>
-<tr class="memdesc:a9a8185e00b60d0be58bfa76166063128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Car GPS signal.  <a href="#a9a8185e00b60d0be58bfa76166063128">More...</a><br/></td></tr>
+<tr class="memdesc:a9a8185e00b60d0be58bfa76166063128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a car GPS signal.  <a href="#a9a8185e00b60d0be58bfa76166063128">More...</a><br/></td></tr>
 <tr class="separator:a9a8185e00b60d0be58bfa76166063128"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:abe0296f34c0ca2857a94659dfdc5801c"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">DANGER_ZONE</a> = 15U</td></tr>
-<tr class="memdesc:abe0296f34c0ca2857a94659dfdc5801c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threat zone in feet.  <a href="#abe0296f34c0ca2857a94659dfdc5801c">More...</a><br/></td></tr>
-<tr class="separator:abe0296f34c0ca2857a94659dfdc5801c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131c99d85b78020f94fe14bd397f3a6e"><td class="memItemLeft" align="right" valign="top">static const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> = 15U</td></tr>
+<tr class="separator:a131c99d85b78020f94fe14bd397f3a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class declaration for the Motorcycle Awareness System (MAS) </p>
@@ -222,7 +221,7 @@ Static Private Attributes</h2></td></tr>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// Do nothing</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00025">MotorcycleAwarenessSystem.hpp:25</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -273,13 +272,13 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Acquire the data packet from the motorcycle </dd></dl>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00128">128</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Dummy motorcycle location from V2V communication</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a> motorCycleLocation;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span> motorCycleLocation;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00129">129</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">// Dummy motorcycle location from V2V communication</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a> motorCycleLocation;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> motorCycleLocation;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="ttc" id="structMotorCycleLocation__t_html"><div class="ttname"><a href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a></div><div class="ttdoc">Struct for the V2V data. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00049">MotorcycleAwarenessSystemTypes.hpp:49</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -351,9 +350,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    this-&gt;motorcycleGpsSignal = <a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="ttc" id="MotorcycleAwarenessSystemTypes_8hpp_html_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40"><div class="ttname"><a href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40">CAR</a></div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00011">MotorcycleAwarenessSystemTypes.hpp:11</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">MotorcycleAwarenessSystem.hpp:28</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the CAN signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a0744e71b9f440a86f5078c876ba7629b"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem::motorcycleRadarSignal</a></div><div class="ttdeci">RadarSignal_t * motorcycleRadarSignal</div><div class="ttdoc">Motorcycle radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">MotorcycleAwarenessSystem.hpp:27</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Pointer to a motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">MotorcycleAwarenessSystem.hpp:29</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the CAN signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">MotorcycleAwarenessSystem.hpp:27</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a0744e71b9f440a86f5078c876ba7629b"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem::motorcycleRadarSignal</a></div><div class="ttdeci">RadarSignal_t * motorcycleRadarSignal</div><div class="ttdoc">Pointer to a motorcycle radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">MotorcycleAwarenessSystem.hpp:28</a></div></div>
 <div class="ttc" id="MotorcycleAwarenessSystemTypes_8hpp_html_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a"><div class="ttname"><a href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a">MOTORCYCLE</a></div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00010">MotorcycleAwarenessSystemTypes.hpp:10</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -388,23 +387,22 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Method to determine whether a hazard is within the motorcycle's safety zone. An object within the safety zone is of potential danger to the motorcycle rider. </p>
 
-<p>Method to determine whether a hazard is within the danger zone of the motorcycle. </p>
-
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00096">96</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> isHazardPresent = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">if</span> ( abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">motorcycleRadarSignal</a>-&gt;<a class="code" href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">objectDistance</a> ) &gt;= <a class="code" href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">DANGER_ZONE</a> )</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        isHazardPresent = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> isHazardPresent;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_abe0296f34c0ca2857a94659dfdc5801c"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">MotorcycleAwarenessSystem::DANGER_ZONE</a></div><div class="ttdeci">static const unsigned int DANGER_ZONE</div><div class="ttdoc">Threat zone in feet. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">MotorcycleAwarenessSystem.hpp:24</a></div></div>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00097">97</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> isHazardPresent = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span> ( abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">motorcycleRadarSignal</a>-&gt;<a class="code" href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">objectDistance</a> ) &gt;= <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a> )</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        isHazardPresent = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> isHazardPresent;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="ttc" id="structRadarSignal__t_html_a96938fbfb77f208743a36d3f8b37cccb"><div class="ttname"><a href="structRadarSignal__t.html#a96938fbfb77f208743a36d3f8b37cccb">RadarSignal_t::objectDistance</a></div><div class="ttdeci">ObjectDistance objectDistance</div><div class="ttdoc">Distance from sensed object to radar sensor. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00036">MotorcycleAwarenessSystemTypes.hpp:36</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a0744e71b9f440a86f5078c876ba7629b"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem::motorcycleRadarSignal</a></div><div class="ttdeci">RadarSignal_t * motorcycleRadarSignal</div><div class="ttdoc">Motorcycle radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">MotorcycleAwarenessSystem.hpp:27</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a131c99d85b78020f94fe14bd397f3a6e"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">MotorcycleAwarenessSystem::SAFETY_ZONE</a></div><div class="ttdeci">static const unsigned int SAFETY_ZONE</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">MotorcycleAwarenessSystem.hpp:24</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a0744e71b9f440a86f5078c876ba7629b"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b">MotorcycleAwarenessSystem::motorcycleRadarSignal</a></div><div class="ttdeci">RadarSignal_t * motorcycleRadarSignal</div><div class="ttdoc">Pointer to a motorcycle radar signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">MotorcycleAwarenessSystem.hpp:28</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -447,8 +445,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> isInRange = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Determine where the motorcycle is relative to the car using the GPS signals</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> ( ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">DANGER_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> )) ||</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">DANGER_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> )))</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span> ( ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">x</a> )) ||</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;         ((abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">carGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> ) + <a class="code" href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">SAFETY_ZONE</a>) &gt;= abs( this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a>-&gt;<a class="code" href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">y</a> )))</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        isInRange = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
@@ -461,12 +459,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> isInRange;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="ttc" id="structGpsSignal__t_html_ab9e083be189fc842ed7aa4fdc978e94e"><div class="ttname"><a href="structGpsSignal__t.html#ab9e083be189fc842ed7aa4fdc978e94e">GpsSignal_t::y</a></div><div class="ttdeci">Coordinate_t y</div><div class="ttdoc">y-axis coordinate </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00027">MotorcycleAwarenessSystemTypes.hpp:27</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">MotorcycleAwarenessSystem.hpp:28</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Pointer to a motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">MotorcycleAwarenessSystem.hpp:29</a></div></div>
 <div class="ttc" id="structGpsSignal__t_html_a6f7bd3c500b55923ab335ada4b6b26eb"><div class="ttname"><a href="structGpsSignal__t.html#a6f7bd3c500b55923ab335ada4b6b26eb">GpsSignal_t::x</a></div><div class="ttdeci">Coordinate_t x</div><div class="ttdoc">x-axis coordinate </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00026">MotorcycleAwarenessSystemTypes.hpp:26</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_abe0296f34c0ca2857a94659dfdc5801c"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#abe0296f34c0ca2857a94659dfdc5801c">MotorcycleAwarenessSystem::DANGER_ZONE</a></div><div class="ttdeci">static const unsigned int DANGER_ZONE</div><div class="ttdoc">Threat zone in feet. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">MotorcycleAwarenessSystem.hpp:24</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a840a5bc17d75276ecdb3a39d7aaf4109"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109">MotorcycleAwarenessSystem::GetMotorcycleLocation</a></div><div class="ttdeci">MotorCycleLocation_t GetMotorcycleLocation(void)</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00128">MotorcycleAwarenessSystem.cpp:128</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a131c99d85b78020f94fe14bd397f3a6e"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e">MotorcycleAwarenessSystem::SAFETY_ZONE</a></div><div class="ttdeci">static const unsigned int SAFETY_ZONE</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">MotorcycleAwarenessSystem.hpp:24</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a840a5bc17d75276ecdb3a39d7aaf4109"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109">MotorcycleAwarenessSystem::GetMotorcycleLocation</a></div><div class="ttdeci">MotorCycleLocation_t GetMotorcycleLocation(void)</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00129">MotorcycleAwarenessSystem.cpp:129</a></div></div>
 <div class="ttc" id="structMotorCycleLocation__t_html"><div class="ttname"><a href="structMotorCycleLocation__t.html">MotorCycleLocation_t</a></div><div class="ttdoc">Struct for the V2V data. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00049">MotorcycleAwarenessSystemTypes.hpp:49</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a9a8185e00b60d0be58bfa76166063128"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">MotorcycleAwarenessSystem::carGpsSignal</a></div><div class="ttdeci">GpsSignal_t * carGpsSignal</div><div class="ttdoc">Car GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">MotorcycleAwarenessSystem.hpp:29</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a9a8185e00b60d0be58bfa76166063128"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128">MotorcycleAwarenessSystem::carGpsSignal</a></div><div class="ttdeci">GpsSignal_t * carGpsSignal</div><div class="ttdoc">Pointer to a car GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00030">MotorcycleAwarenessSystem.hpp:30</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -516,8 +514,8 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> (this-&gt;<a class="code" href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">canSignal</a>[<a class="code" href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">vehicleType</a>])-&gt;isBlinkerOn;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00025">MotorcycleAwarenessSystem.hpp:25</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the CAN signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a2d8ac602ae24dcf38aaa95a42ffb4e1f"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f">MotorcycleAwarenessSystem::canSignal</a></div><div class="ttdeci">std::map&lt; VehicleType, CanSignal_t * &gt; canSignal</div><div class="ttdoc">Storage for the CAN signals. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">MotorcycleAwarenessSystem.hpp:27</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -570,12 +568,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_aec5e4731c6bf0789821ba2793918e3ee"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee">MotorcycleAwarenessSystem::RelayWarningToOperator</a></div><div class="ttdeci">void RelayWarningToOperator(void)</div><div class="ttdoc">Method to relay a warning to operator via bluetooth. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00116">MotorcycleAwarenessSystem.cpp:116</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_aec5e4731c6bf0789821ba2793918e3ee"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee">MotorcycleAwarenessSystem::RelayWarningToOperator</a></div><div class="ttdeci">void RelayWarningToOperator(void)</div><div class="ttdoc">Method to relay a warning to operator via bluetooth connectivity. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00117">MotorcycleAwarenessSystem.cpp:117</a></div></div>
 <div class="ttc" id="classMotorcycleAwarenessSystem_html_a239655aca9c875b1dbbad3ce155c7892"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892">MotorcycleAwarenessSystem::IsMotorcycleInRange</a></div><div class="ttdeci">bool IsMotorcycleInRange(void)</div><div class="ttdoc">Method to determine whether the motorcycle is within the car&#39;s range. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00075">MotorcycleAwarenessSystem.cpp:75</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a35d59c8299b0d5ef43c10306cc7f2ee1"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1">MotorcycleAwarenessSystem::IsHazardPresent</a></div><div class="ttdeci">bool IsHazardPresent(void)</div><div class="ttdoc">Method to determine whether a hazard is within the danger zone of the motorcycle. ...</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00096">MotorcycleAwarenessSystem.cpp:96</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00025">MotorcycleAwarenessSystem.hpp:25</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a35d59c8299b0d5ef43c10306cc7f2ee1"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1">MotorcycleAwarenessSystem::IsHazardPresent</a></div><div class="ttdeci">bool IsHazardPresent(void)</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00097">MotorcycleAwarenessSystem.cpp:97</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a977b2085bfbf6a62902bf2d80160e6d2"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a977b2085bfbf6a62902bf2d80160e6d2">MotorcycleAwarenessSystem::vehicleType</a></div><div class="ttdeci">VehicleType vehicleType</div><div class="ttdoc">The vehicle type (motorcycle or car) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">MotorcycleAwarenessSystem.hpp:26</a></div></div>
 <div class="ttc" id="classMotorcycleAwarenessSystem_html_a9c3f98a014b0af39fa120f478eb5f348"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348">MotorcycleAwarenessSystem::IsVehicleBlinkerOn</a></div><div class="ttdeci">bool IsVehicleBlinkerOn(void)</div><div class="ttdoc">Method to determine whether the car&#39;s blinker is ON. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00069">MotorcycleAwarenessSystem.cpp:69</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a4e6eec23ec46e24ee377a3c94e15eba4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4">MotorcycleAwarenessSystem::TrackMotorcycle</a></div><div class="ttdeci">void TrackMotorcycle(void)</div><div class="ttdoc">Method to track the motorcycle using its GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00109">MotorcycleAwarenessSystem.cpp:109</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a4e6eec23ec46e24ee377a3c94e15eba4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4">MotorcycleAwarenessSystem::TrackMotorcycle</a></div><div class="ttdeci">void TrackMotorcycle(void)</div><div class="ttdoc">Method to track the motorcycle using its GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00110">MotorcycleAwarenessSystem.cpp:110</a></div></div>
 <div class="ttc" id="MotorcycleAwarenessSystemTypes_8hpp_html_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a"><div class="ttname"><a href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a">MOTORCYCLE</a></div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00010">MotorcycleAwarenessSystemTypes.hpp:10</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -583,7 +581,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph.png" border="0" usemap="#classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph" alt=""/></div>
 <map name="classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph" id="classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph">
-<area shape="rect" id="node2" href="classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4" title="Method to track the motorcycle using its GPS signal. " alt="" coords="251,5,447,46"/><area shape="rect" id="node3" href="classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="Method to determine whether a hazard is within the danger zone of the motorcycle. ..." alt="" coords="251,70,447,111"/><area shape="rect" id="node4" href="classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth. " alt="" coords="251,135,447,177"/><area shape="rect" id="node5" href="classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348" title="Method to determine whether the car&#39;s blinker is ON. " alt="" coords="251,201,447,242"/><area shape="rect" id="node6" href="classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892" title="Method to determine whether the motorcycle is within the car&#39;s range. " alt="" coords="251,266,447,307"/><area shape="rect" id="node7" href="classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109" title="MotorcycleAwarenessSystem\l::GetMotorcycleLocation" alt="" coords="497,266,693,307"/></map>
+<area shape="rect" id="node2" href="classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4" title="Method to track the motorcycle using its GPS signal. " alt="" coords="251,5,447,46"/><area shape="rect" id="node3" href="classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="MotorcycleAwarenessSystem\l::IsHazardPresent" alt="" coords="251,70,447,111"/><area shape="rect" id="node4" href="classMotorcycleAwarenessSystem.html#aec5e4731c6bf0789821ba2793918e3ee" title="Method to relay a warning to operator via bluetooth connectivity. " alt="" coords="251,135,447,177"/><area shape="rect" id="node5" href="classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348" title="Method to determine whether the car&#39;s blinker is ON. " alt="" coords="251,201,447,242"/><area shape="rect" id="node6" href="classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892" title="Method to determine whether the motorcycle is within the car&#39;s range. " alt="" coords="251,266,447,307"/><area shape="rect" id="node7" href="classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109" title="MotorcycleAwarenessSystem\l::GetMotorcycleLocation" alt="" coords="497,266,693,307"/></map>
 </div>
 </p>
 
@@ -620,18 +618,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Method to relay a warning to operator via bluetooth. </p>
+<p>Method to relay a warning to operator via bluetooth connectivity. </p>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Transmit the bluetooth message to the operator </dd></dl>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00116">116</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Assemble the message to be sent</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="structBlueToothMessage__t.html">BlueToothMessage_t</a> blueToothMessage;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    blueToothMessage.<a class="code" href="structBlueToothMessage__t.html#a2dd315aa1cba1d2d3045e26b9f171e61">isHazardPresent</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// Dummy message</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    blueToothMessage.<a class="code" href="structBlueToothMessage__t.html#ab872789a32f068dae8bcf77122256b78">dataBuffer</a>[0] = 0x2015;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00117">117</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Assemble the message to be sent</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="structBlueToothMessage__t.html">BlueToothMessage_t</a> blueToothMessage;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    blueToothMessage.<a class="code" href="structBlueToothMessage__t.html#a2dd315aa1cba1d2d3045e26b9f171e61">isHazardPresent</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// Dummy message</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    blueToothMessage.<a class="code" href="structBlueToothMessage__t.html#ab872789a32f068dae8bcf77122256b78">dataBuffer</a>[0] = 0x2015;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
 <div class="ttc" id="structBlueToothMessage__t_html_a2dd315aa1cba1d2d3045e26b9f171e61"><div class="ttname"><a href="structBlueToothMessage__t.html#a2dd315aa1cba1d2d3045e26b9f171e61">BlueToothMessage_t::isHazardPresent</a></div><div class="ttdeci">bool isHazardPresent</div><div class="ttdoc">Hazard flag. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00043">MotorcycleAwarenessSystemTypes.hpp:43</a></div></div>
 <div class="ttc" id="structBlueToothMessage__t_html_ab872789a32f068dae8bcf77122256b78"><div class="ttname"><a href="structBlueToothMessage__t.html#ab872789a32f068dae8bcf77122256b78">BlueToothMessage_t::dataBuffer</a></div><div class="ttdeci">unsigned int dataBuffer[255]</div><div class="ttdoc">Bluetooth data buffer. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00044">MotorcycleAwarenessSystemTypes.hpp:44</a></div></div>
 <div class="ttc" id="structBlueToothMessage__t_html"><div class="ttname"><a href="structBlueToothMessage__t.html">BlueToothMessage_t</a></div><div class="ttdoc">Struct for bluetooth message. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00041">MotorcycleAwarenessSystemTypes.hpp:41</a></div></div>
@@ -671,13 +669,13 @@ Here is the caller graph for this function:</div>
 
 <p>Method to track the motorcycle using its GPS signal. </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00109">109</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// Push the motorcycle&#39;s GPS location onto the list</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac">motorcycleLocation</a>.push_front( *<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a> );</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_af6becfeb1d11b467cb80a94a8e6940ac"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac">MotorcycleAwarenessSystem::motorcycleLocation</a></div><div class="ttdeci">std::list&lt; GpsSignal_t &gt; motorcycleLocation</div><div class="ttdoc">Container to track the motorcycle&#39;s location. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00023">MotorcycleAwarenessSystem.hpp:23</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">MotorcycleAwarenessSystem.hpp:28</a></div></div>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html#l00110">110</a> of file <a class="el" href="MotorcycleAwarenessSystem_8cpp_source.html">MotorcycleAwarenessSystem.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Push the motorcycle&#39;s GPS location onto the list</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac">motorcycleLocation</a>.push_front( *<a class="code" href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">motorcycleGpsSignal</a> );</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_af6becfeb1d11b467cb80a94a8e6940ac"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac">MotorcycleAwarenessSystem::motorcycleLocation</a></div><div class="ttdeci">std::list&lt; GpsSignal_t &gt; motorcycleLocation</div><div class="ttdoc">Container used to track the motorcycle&#39;s location. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00023">MotorcycleAwarenessSystem.hpp:23</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_ab281a3993b574923b2f379ed0477b2d4"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4">MotorcycleAwarenessSystem::motorcycleGpsSignal</a></div><div class="ttdeci">GpsSignal_t * motorcycleGpsSignal</div><div class="ttdoc">Pointer to a motorcycle GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">MotorcycleAwarenessSystem.hpp:29</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -711,7 +709,7 @@ Here is the caller graph for this function:</div>
 
 <p>Storage for the CAN signals. </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">26</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">27</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
 </div>
 </div>
@@ -733,33 +731,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Car GPS signal. </p>
+<p>Pointer to a car GPS signal. </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">29</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="abe0296f34c0ca2857a94659dfdc5801c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const unsigned int MotorcycleAwarenessSystem::DANGER_ZONE = 15U</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Threat zone in feet. </p>
-
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">24</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00030">30</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
 </div>
 </div>
@@ -781,9 +755,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Motorcycle GPS signal. </p>
+<p>Pointer to a motorcycle GPS signal. </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">28</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00029">29</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
 </div>
 </div>
@@ -805,7 +779,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Container to track the motorcycle's location. </p>
+<p>Container used to track the motorcycle's location. </p>
 
 <p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00023">23</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
@@ -829,9 +803,32 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Motorcycle radar signal. </p>
+<p>Pointer to a motorcycle radar signal. </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00027">27</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00028">28</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a131c99d85b78020f94fe14bd397f3a6e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const unsigned int MotorcycleAwarenessSystem::SAFETY_ZONE = 15U</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Distance from the radar sensor in feet in which a detected object becomes a potential danger </p>
+
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00024">24</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
 </div>
 </div>
@@ -855,7 +852,7 @@ Here is the caller graph for this function:</div>
 
 <p>The vehicle type (motorcycle or car) </p>
 
-<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00025">25</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html#l00026">26</a> of file <a class="el" href="MotorcycleAwarenessSystem_8hpp_source.html">MotorcycleAwarenessSystem.hpp</a>.</p>
 
 </div>
 </div>
@@ -869,7 +866,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a></li>
-    <li class="footer">Generated on Fri Apr 17 2015 13:10:37 for Motorcycle Awareness System (MAS) by
+    <li class="footer">Generated on Fri Apr 17 2015 23:53:22 for Motorcycle Awareness System (MAS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
