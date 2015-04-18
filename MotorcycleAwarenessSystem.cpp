@@ -77,8 +77,8 @@ bool MotorcycleAwarenessSystem::IsMotorcycleInRange( void )
     bool isInRange = false;
 
     // Determine where the motorcycle is relative to the car using the GPS signals
-    if ( ((abs( this->carGpsSignal->x ) + SAFETY_ZONE) >= abs( this->motorcycleGpsSignal->x )) ||
-         ((abs( this->carGpsSignal->y ) + SAFETY_ZONE) >= abs( this->motorcycleGpsSignal->y )))
+    if ( abs( (this->carGpsSignal->x) - (this->motorcycleGpsSignal->x) ) <= SAFETY_ZONE &&
+         abs( (this->carGpsSignal->y) - (this->motorcycleGpsSignal->y) ) <= SAFETY_ZONE )
     {
         isInRange = true;
     }
@@ -98,7 +98,7 @@ bool MotorcycleAwarenessSystem::IsHazardPresent( void )
 {
     bool isHazardPresent = false;
 
-    if ( abs( this->motorcycleRadarSignal->objectDistance ) >= SAFETY_ZONE )
+    if ( abs( this->motorcycleRadarSignal->objectDistance ) <= SAFETY_ZONE )
     {
         isHazardPresent = true;
     }

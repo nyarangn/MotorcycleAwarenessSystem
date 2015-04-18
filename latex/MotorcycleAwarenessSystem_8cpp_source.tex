@@ -75,10 +75,10 @@
 00077     \textcolor{keywordtype}{bool} isInRange = \textcolor{keyword}{false};
 00078 
 00079     \textcolor{comment}{// Determine where the motorcycle is relative to the car using the GPS signals}
-00080     \textcolor{keywordflow}{if} ( ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x} ) + \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE}) >= abs( this->
-      \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x} )) ||
-00081          ((abs( this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y} ) + \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE}) >= abs( this->
-      \hyperlink{classMotorcycleAwarenessSystem_ab281a3993b574923b2f379ed0477b2d4}{motorcycleGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y} )))
+00080     \textcolor{keywordflow}{if} ( abs( (this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_a6f7bd3c500b55923ab335ada4b6b26eb}{x}) - (this->motorcycleGpsSignal->x) ) <= 
+      \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE} &&
+00081          abs( (this->\hyperlink{classMotorcycleAwarenessSystem_a9a8185e00b60d0be58bfa76166063128}{carGpsSignal}->\hyperlink{structGpsSignal__t_ab9e083be189fc842ed7aa4fdc978e94e}{y}) - (this->motorcycleGpsSignal->y) ) <= 
+      \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE} )
 00082     \{
 00083         isInRange = \textcolor{keyword}{true};
 00084     \}
@@ -96,7 +96,7 @@
 00098 \{
 00099     \textcolor{keywordtype}{bool} isHazardPresent = \textcolor{keyword}{false};
 00100 
-00101     \textcolor{keywordflow}{if} ( abs( this->\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}->\hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{objectDistance} ) >= 
+00101     \textcolor{keywordflow}{if} ( abs( this->\hyperlink{classMotorcycleAwarenessSystem_a0744e71b9f440a86f5078c876ba7629b}{motorcycleRadarSignal}->\hyperlink{structRadarSignal__t_a96938fbfb77f208743a36d3f8b37cccb}{objectDistance} ) <= 
       \hyperlink{classMotorcycleAwarenessSystem_a131c99d85b78020f94fe14bd397f3a6e}{SAFETY\_ZONE} )
 00102     \{
 00103         isHazardPresent = \textcolor{keyword}{true};

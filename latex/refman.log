@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.15)  17 APR 2015 23:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.15)  18 APR 2015 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1159,7 +1159,7 @@ Package pdftex.def Info: classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c103
 (pdftex.def)             Requested size: 350.0pt x 79.21893pt.
 
 <classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892_cgraph.pdf, i
-d=529, 413.545pt x 110.4125pt>
+d=525, 413.545pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892_cgraph.p
 df Graphic file (type pdf)
 
@@ -1174,7 +1174,7 @@ Underfull \vbox (badness 4403) has occurred while \output is active []
  [10 <./classMotorcycleAwarenessSystem_a35d59c8299b0d5ef43c10306cc7f2ee1_icgrap
 h.pdf>]
 <classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892_icgraph.pdf, 
-id=545, 487.8225pt x 110.4125pt>
+id=541, 487.8225pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_a239655aca9c875b1dbbad3ce155c7892_icgraph.
 pdf Graphic file (type pdf)
 
@@ -1185,7 +1185,7 @@ ce155c7892_icgraph.pdf used on input line 296.
 (pdftex.def)             Requested size: 350.0pt x 79.21893pt.
 
 <classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348_icgraph.pdf, 
-id=550, 487.8225pt x 110.4125pt>
+id=546, 487.8225pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_a9c3f98a014b0af39fa120f478eb5f348_icgraph.
 pdf Graphic file (type pdf)
 
@@ -1209,7 +1209,7 @@ pdfTeX warning: pdflatex (file ./classMotorcycleAwarenessSystem_a9c3f98a014b0af
 ncluded in a single page
 >]
 <classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph.pdf, i
-d=587, 598.235pt x 307.1475pt>
+d=583, 598.235pt x 307.1475pt>
 File: classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_cgraph.p
 df Graphic file (type pdf)
 
@@ -1220,7 +1220,7 @@ c4f4435a2e_cgraph.pdf used on input line 381.
 (pdftex.def)             Requested size: 350.0pt x 179.70164pt.
 
 <classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_icgraph.pdf, 
-id=588, 303.1325pt x 110.4125pt>
+id=584, 303.1325pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e_icgraph.
 pdf Graphic file (type pdf)
 
@@ -1238,7 +1238,7 @@ pdfTeX warning: pdflatex (file ./classMotorcycleAwarenessSystem_afb19e832c17d43
 ncluded in a single page
 >]
 <classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee_icgraph.pdf, 
-id=612, 487.8225pt x 110.4125pt>
+id=608, 487.8225pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2793918e3ee_icgraph.
 pdf Graphic file (type pdf)
 
@@ -1249,7 +1249,7 @@ Package pdftex.def Info: classMotorcycleAwarenessSystem_aec5e4731c6bf0789821ba2
 (pdftex.def)             Requested size: 350.0pt x 79.21893pt.
 
 <classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4_icgraph.pdf, 
-id=617, 487.8225pt x 110.4125pt>
+id=613, 487.8225pt x 110.4125pt>
 File: classMotorcycleAwarenessSystem_a4e6eec23ec46e24ee377a3c94e15eba4_icgraph.
 pdf Graphic file (type pdf)
 
@@ -1266,7 +1266,7 @@ pdfTeX warning: pdflatex (file ./classMotorcycleAwarenessSystem_a4e6eec23ec46e2
 4ee377a3c94e15eba4_icgraph.pdf): PDF inclusion: multiple pdfs with page group i
 ncluded in a single page
 >]) (./structMotorCycleLocation__t.tex
-<structMotorCycleLocation__t__coll__graph.pdf, id=656, 194.7275pt x 244.915pt>
+<structMotorCycleLocation__t__coll__graph.pdf, id=652, 194.7275pt x 244.915pt>
 File: structMotorCycleLocation__t__coll__graph.pdf Graphic file (type pdf)
 
 <use structMotorCycleLocation__t__coll__graph.pdf>
@@ -1278,7 +1278,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14])
 (./structRadarSignal__t.tex
-<structRadarSignal__t__coll__graph.pdf, id=677, 194.7275pt x 254.9525pt>
+<structRadarSignal__t__coll__graph.pdf, id=673, 194.7275pt x 254.9525pt>
 File: structRadarSignal__t__coll__graph.pdf Graphic file (type pdf)
 
 <use structRadarSignal__t__coll__graph.pdf>
@@ -1287,14 +1287,14 @@ ne 19.
 (pdftex.def)             Requested size: 194.0pt x 254.0104pt.
  [15 <./structMotorCycleLocation__t__coll__graph.pdf>] [16 <./structRadarSignal
 __t__coll__graph.pdf>])
-(./main_8cpp.tex <main_8cpp__incl.pdf, id=725, 455.7025pt x 281.05pt>
+(./main_8cpp.tex <main_8cpp__incl.pdf, id=721, 455.7025pt x 281.05pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 
 <use main_8cpp__incl.pdf>
 Package pdftex.def Info: main_8cpp__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 215.86452pt.
  [17 <./main_8cpp__incl.pdf>]
-<main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.pdf, id=759, 672.5125pt x 3
+<main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.pdf, id=755, 672.5125pt x 3
 07.1475pt>
 File: main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.pdf Graphic file (type
  pdf)
@@ -1305,7 +1305,7 @@ Package pdftex.def Info: main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgraph.pdf
 )
 (./main_8cpp_source.tex [18 <./main_8cpp_a840291bc02cba5474a4cb46a9b9566fe_cgra
 ph.pdf>]) (./mainpage_8dox.tex) (./MotorcycleAwarenessSystem_8cpp.tex
-<MotorcycleAwarenessSystem_8cpp__incl.pdf, id=793, 385.44pt x 281.05pt>
+<MotorcycleAwarenessSystem_8cpp__incl.pdf, id=789, 385.44pt x 281.05pt>
 File: MotorcycleAwarenessSystem_8cpp__incl.pdf Graphic file (type pdf)
 
 <use MotorcycleAwarenessSystem_8cpp__incl.pdf>
@@ -1319,7 +1319,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [20])
 (./MotorcycleAwarenessSystem_8hpp.tex
-<MotorcycleAwarenessSystem_8hpp__incl.pdf, id=876, 359.3425pt x 224.84pt>
+<MotorcycleAwarenessSystem_8hpp__incl.pdf, id=868, 359.3425pt x 224.84pt>
 File: MotorcycleAwarenessSystem_8hpp__incl.pdf Graphic file (type pdf)
 
 <use MotorcycleAwarenessSystem_8hpp__incl.pdf>
@@ -1330,7 +1330,7 @@ Package pdftex.def Info: MotorcycleAwarenessSystem_8hpp__incl.pdf used on input
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
-<MotorcycleAwarenessSystem_8hpp__dep__incl.pdf, id=882, 320.19624pt x 156.585pt
+<MotorcycleAwarenessSystem_8hpp__dep__incl.pdf, id=874, 320.19624pt x 156.585pt
 >
 File: MotorcycleAwarenessSystem_8hpp__dep__incl.pdf Graphic file (type pdf)
  <use MotorcycleAwarenessSystem_8hpp__dep__incl.pdf>
@@ -1344,7 +1344,7 @@ hpp__incl.pdf> <./MotorcycleAwarenessSystem_8hpp__dep__incl.pdf
 pdfTeX warning: pdflatex (file ./MotorcycleAwarenessSystem_8hpp__dep__incl.pdf)
 : PDF inclusion: multiple pdfs with page group included in a single page
 >]) (./MotorcycleAwarenessSystemTypes_8hpp.tex
-<MotorcycleAwarenessSystemTypes_8hpp__incl.pdf, id=941, 226.8475pt x 168.63pt>
+<MotorcycleAwarenessSystemTypes_8hpp__incl.pdf, id=933, 226.8475pt x 168.63pt>
 File: MotorcycleAwarenessSystemTypes_8hpp__incl.pdf Graphic file (type pdf)
 
 <use MotorcycleAwarenessSystemTypes_8hpp__incl.pdf>
@@ -1352,7 +1352,7 @@ Package pdftex.def Info: MotorcycleAwarenessSystemTypes_8hpp__incl.pdf used on
 input line 10.
 (pdftex.def)             Requested size: 226.0pt x 168.00174pt.
 
-<MotorcycleAwarenessSystemTypes_8hpp__dep__incl.pdf, id=942, 366.36874pt x 224.
+<MotorcycleAwarenessSystemTypes_8hpp__dep__incl.pdf, id=934, 366.36874pt x 224.
 84pt>
 File: MotorcycleAwarenessSystemTypes_8hpp__dep__incl.pdf Graphic file (type pdf
 )
@@ -1423,10 +1423,10 @@ hvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (30 pages, 422853 bytes).
+Output written on refman.pdf (30 pages, 422376 bytes).
 PDF statistics:
- 1241 PDF objects out of 1440 (max. 8388607)
- 1137 compressed objects within 12 object streams
+ 1233 PDF objects out of 1440 (max. 8388607)
+ 1129 compressed objects within 12 object streams
  219 named destinations out of 1000 (max. 500000)
  449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
