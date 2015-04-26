@@ -1,6 +1,6 @@
 var MotorcycleAwarenessSystemTypes_8hpp =
 [
-    [ "CanSignal_t", "structCanSignal__t.html", "structCanSignal__t" ],
+    [ "TurnSignal_t", "structTurnSignal__t.html", "structTurnSignal__t" ],
     [ "GpsSignal_t", "structGpsSignal__t.html", "structGpsSignal__t" ],
     [ "RadarSignal_t", "structRadarSignal__t.html", "structRadarSignal__t" ],
     [ "BlueToothMessage_t", "structBlueToothMessage__t.html", "structBlueToothMessage__t" ],

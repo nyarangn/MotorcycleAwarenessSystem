@@ -10,8 +10,8 @@
 int main( void )
 {
     // Define mock signals
-    CanSignal_t* motorcycleCanSignal = new CanSignal_t;
-    CanSignal_t* carCanSignal = new CanSignal_t;
+    TurnSignal_t* motorcycleTurnSignal = new TurnSignal_t;
+    TurnSignal_t* carTurnSignal = new TurnSignal_t;
     RadarSignal_t* motorcycleRadarSignal = new RadarSignal_t;
     GpsSignal_t* motorcycleGpsSignal = new GpsSignal_t;
     GpsSignal_t* carGpsSignal = new GpsSignal_t;;
@@ -19,13 +19,13 @@ int main( void )
     // Instantiate the Motorcycle Awareness System (MAS) for the motorcycle
     MotorcycleAwarenessSystem MAS_motorcycle( MOTORCYCLE );
     // Initialize the car MAS
-    MAS_motorcycle.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
+    MAS_motorcycle.Initialize( motorcycleTurnSignal, (TurnSignal_t*)NULL, motorcycleRadarSignal,
                                           motorcycleGpsSignal, carGpsSignal );
 
     // Instantiate the Motorcycle Awareness System (MAS) for the car
     MotorcycleAwarenessSystem MAS_car( CAR );
     // Initialize the car MAS
-    MAS_car.Initialize( motorcycleCanSignal, carCanSignal, motorcycleRadarSignal,
+    MAS_car.Initialize( (TurnSignal_t*)NULL, carTurnSignal, motorcycleRadarSignal,
                                           motorcycleGpsSignal, carGpsSignal );
 
     // Run the MAS systems for the car & motorcycle

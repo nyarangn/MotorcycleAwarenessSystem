@@ -23,7 +23,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>std::map&lt; VehicleType, CanSignal_t * &gt; canSignal<para><emphasis>Storage for the CAN signals.</emphasis></para></para>
+                        <para>std::map&lt; VehicleType, TurnSignal_t * &gt; turnSignal<para><emphasis>Storage for the turn signals.</emphasis></para></para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -80,8 +80,8 @@ void )</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="classMotorcycleAwarenessSystem_1a55f1ea16b6311120ea42b460fb8b3a71">Initialize</link> (
-<link linkend="structCanSignal__t">CanSignal_t</link> * motorcycleCanSignal, <link linkend="structCanSignal__t">CanSignal_t</link> * carCanSignal, <link linkend="structRadarSignal__t">RadarSignal_t</link> * motorcycleRadarSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * motorcycleGpsSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * carGpsSignal)</para>
+                        <para>void <link linkend="classMotorcycleAwarenessSystem_1a826b6c2286c494c8aca3a47e6430b3ff">Initialize</link> (
+<link linkend="structTurnSignal__t">TurnSignal_t</link> * motorcycleTurnSignal, <link linkend="structTurnSignal__t">TurnSignal_t</link> * carTurnSignal, <link linkend="structRadarSignal__t">RadarSignal_t</link> * motorcycleRadarSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * motorcycleGpsSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * carGpsSignal)</para>
                     </listitem>
                 </itemizedlist>
             </para>
@@ -168,8 +168,8 @@ void )</para>
                 <title>MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem (void)</title> <emphasis>Destructor.</emphasis>
                 
             </section>
-            <section xml:id="classMotorcycleAwarenessSystem_1a55f1ea16b6311120ea42b460fb8b3a71">
-                <title>void MotorcycleAwarenessSystem::Initialize (CanSignal_t *motorcycleCanSignal, CanSignal_t *carCanSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</title> <emphasis>Method to initialize the MAS system.</emphasis>
+            <section xml:id="classMotorcycleAwarenessSystem_1a826b6c2286c494c8aca3a47e6430b3ff">
+                <title>void MotorcycleAwarenessSystem::Initialize (TurnSignal_t *motorcycleTurnSignal, TurnSignal_t *carTurnSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</title> <emphasis>Method to initialize the MAS system.</emphasis>
                 
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1afb19e832c17d43941d9ed6c4f4435a2e">

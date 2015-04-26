@@ -23,16 +23,16 @@ MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem( void )
 }
 
 /// Method to initialize the MAS system
-void MotorcycleAwarenessSystem::Initialize( CanSignal_t* motorcycleCanSignal, CanSignal_t* carCanSignal,
+void MotorcycleAwarenessSystem::Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
                                             RadarSignal_t* motorcycleRadarSignal, GpsSignal_t* motorcycleGpsSignal,
                                             GpsSignal_t* carGpsSignal  )
 {
     // Initialize the motorcycle radar signal
     this->motorcycleRadarSignal = motorcycleRadarSignal;
 
-    // Initialize the canSignal map
-    canSignal[MOTORCYCLE] = motorcycleCanSignal;
-    canSignal[CAR] = carCanSignal;
+    // Initialize the turn signal map
+    turnSignal[MOTORCYCLE] = motorcycleTurnSignal;
+    turnSignal[CAR] = carTurnSignal;
 
     // Initialize the GPS signals
     this->motorcycleGpsSignal = motorcycleGpsSignal;
@@ -68,7 +68,15 @@ void MotorcycleAwarenessSystem::MonitorConditions( void )
 /// Method to determine whether the car's blinker is ON
 bool MotorcycleAwarenessSystem::IsVehicleBlinkerOn( void )
 {
-    return (this->canSignal[vehicleType])->isBlinkerOn;
+    bool isBlinkerOn = false;
+
+    if ( this->turnSignal[vehicleType]->isRightBlinkerOn ||
+         this->turnSignal[vehicleType]->isLeftBlinkerOn )
+    {
+        isBlinkerOn = true;
+    }
+
+    return isBlinkerOn;
 }
 
 /// Method to determine whether the motorcycle is within the car's range

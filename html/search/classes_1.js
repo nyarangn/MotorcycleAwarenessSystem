@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cansignal_5ft',['CanSignal_t',['../structCanSignal__t.html',1,'']]]
+  ['gpssignal_5ft',['GpsSignal_t',['../structGpsSignal__t.html',1,'']]]
 ];

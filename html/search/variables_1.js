@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['cansignal',['canSignal',['../classMotorcycleAwarenessSystem.html#a2d8ac602ae24dcf38aaa95a42ffb4e1f',1,'MotorcycleAwarenessSystem']]],
-  ['cargpssignal',['carGpsSignal',['../classMotorcycleAwarenessSystem.html#a9a8185e00b60d0be58bfa76166063128',1,'MotorcycleAwarenessSystem']]],
-  ['currenttime',['currentTime',['../structGpsSignal__t.html#abc96245129f39c6e51e8bfe955f2047e',1,'GpsSignal_t']]]
+  ['databuffer',['dataBuffer',['../structBlueToothMessage__t.html#ab872789a32f068dae8bcf77122256b78',1,'BlueToothMessage_t']]],
+  ['datapacket',['dataPacket',['../structMotorCycleLocation__t.html#a1f854587b19dbe91dffd637ce70be62e',1,'MotorCycleLocation_t']]]
 ];

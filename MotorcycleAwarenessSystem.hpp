@@ -14,7 +14,7 @@ class MotorcycleAwarenessSystem
     public:
         MotorcycleAwarenessSystem( VehicleType vehicleType );
         ~MotorcycleAwarenessSystem( void );
-        void Initialize( CanSignal_t* motorcycleCanSignal, CanSignal_t* carCanSignal,
+        void Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
                          RadarSignal_t* motorcycleRadarSignal, GpsSignal_t* motorcycleGpsSignal,
                          GpsSignal_t* carGpsSignal );
         void MonitorConditions( void );
@@ -24,7 +24,7 @@ class MotorcycleAwarenessSystem
         static const unsigned int SAFETY_ZONE = 15U; ///< Distance from the radar sensor in feet in which a detected
                                                      ///  object becomes a potential danger
         VehicleType vehicleType; ///< The vehicle type (motorcycle or car)
-        std::map<VehicleType, CanSignal_t*> canSignal; ///< Storage for the CAN signals
+        std::map<VehicleType, TurnSignal_t*> turnSignal; ///< Storage for the turn signals
         RadarSignal_t* motorcycleRadarSignal; ///< Pointer to a motorcycle radar signal
         GpsSignal_t* motorcycleGpsSignal; ///< Pointer to a motorcycle GPS signal
         GpsSignal_t* carGpsSignal; ///< Pointer to a car GPS signal

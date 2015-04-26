@@ -8,7 +8,7 @@
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>struct <link linkend="structCanSignal__t">CanSignal_t</link></para>
+                        <para>struct <link linkend="structTurnSignal__t">TurnSignal_t</link></para>
                     </listitem>
                 </itemizedlist>
             </para>

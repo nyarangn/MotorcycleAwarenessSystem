@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="structTurnSignal__t">
+<title>TurnSignal_t struct Reference</title>
+<para>
+    <programlisting>#include <link linkend="MotorcycleAwarenessSystemTypes_8hpp">&lt;MotorcycleAwarenessSystemTypes.hpp&gt;</link></programlisting>
+</para>
+        <simplesect>
+            <title>Public Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isRightBlinkerOn<para><emphasis>Right-hand-side blinker signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool isLeftBlinkerOn<para><emphasis>Left-hand-side blinker signal.</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>Structure used to store the data coming from the turn-signal relay indicating the status of the blinker lights </para>
+                <para>Definition at line 17 of file MotorcycleAwarenessSystemTypes.hpp</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MotorcycleAwarenessSystemTypes.hpp</para></listitem></itemizedlist></para>
+        </simplesect>
+</section>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['gpssignal_5ft',['GpsSignal_t',['../structGpsSignal__t.html',1,'']]]
+  ['motorcycleawarenesssystem',['MotorcycleAwarenessSystem',['../classMotorcycleAwarenessSystem.html',1,'']]],
+  ['motorcyclelocation_5ft',['MotorCycleLocation_t',['../structMotorCycleLocation__t.html',1,'']]]
 ];

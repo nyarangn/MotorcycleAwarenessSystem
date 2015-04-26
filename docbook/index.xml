@@ -8,11 +8,11 @@
     <chapter>
         <title>Class Documentation</title>
         <xi:include href="structBlueToothMessage__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-        <xi:include href="structCanSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="structGpsSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="classMotorcycleAwarenessSystem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="structMotorCycleLocation__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
         <xi:include href="structRadarSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="structTurnSignal__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     </chapter>
     <chapter>
         <title>File Documentation</title>

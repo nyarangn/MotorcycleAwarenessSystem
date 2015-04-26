@@ -11,11 +11,12 @@ enum VehicleType
     CAR
 };
 
-/// Structure that emulates a CAN bus signal
-struct CanSignal_t
+/// Structure used to store the data coming from the turn-signal
+/// relay indicating the status of the blinker lights
+struct TurnSignal_t
 {
-    bool isBlinkerOn; ///< Blinker signal
-    int busData[16]; ///< Other CAN bus data
+    bool isRightBlinkerOn; ///< Right-hand-side blinker signal
+    bool isLeftBlinkerOn; ///< Left-hand-side blinker signal
 };
 
 typedef float Coordinate_t; ///< GPS coordinates
