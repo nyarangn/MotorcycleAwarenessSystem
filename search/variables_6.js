@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['safety_5fzone',['SAFETY_ZONE',['../classMotorcycleAwarenessSystem.html#a131c99d85b78020f94fe14bd397f3a6e',1,'MotorcycleAwarenessSystem']]]
+  ['turnsignal',['turnSignal',['../classMotorcycleAwarenessSystem.html#a43fde090639a3a58fc5bbf8bafc966f7',1,'MotorcycleAwarenessSystem']]]
 ];

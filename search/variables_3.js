@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['isblinkeron',['isBlinkerOn',['../structCanSignal__t.html#a209edc6387534529f57c2362ec8f2586',1,'CanSignal_t']]],
-  ['ishazardpresent',['isHazardPresent',['../structBlueToothMessage__t.html#a2dd315aa1cba1d2d3045e26b9f171e61',1,'BlueToothMessage_t']]]
+  ['motorcyclegpssignal',['motorcycleGpsSignal',['../classMotorcycleAwarenessSystem.html#ab281a3993b574923b2f379ed0477b2d4',1,'MotorcycleAwarenessSystem']]],
+  ['motorcyclelocation',['motorcycleLocation',['../classMotorcycleAwarenessSystem.html#af6becfeb1d11b467cb80a94a8e6940ac',1,'MotorcycleAwarenessSystem']]],
+  ['motorcycleradarsignal',['motorcycleRadarSignal',['../classMotorcycleAwarenessSystem.html#a0744e71b9f440a86f5078c876ba7629b',1,'MotorcycleAwarenessSystem']]]
 ];

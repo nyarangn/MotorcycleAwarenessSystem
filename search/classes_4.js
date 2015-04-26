@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['radarsignal_5ft',['RadarSignal_t',['../structRadarSignal__t.html',1,'']]]
+  ['turnsignal_5ft',['TurnSignal_t',['../structTurnSignal__t.html',1,'']]]
 ];
