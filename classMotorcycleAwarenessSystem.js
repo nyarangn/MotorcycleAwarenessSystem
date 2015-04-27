@@ -3,7 +3,7 @@ var classMotorcycleAwarenessSystem =
     [ "MotorcycleAwarenessSystem", "classMotorcycleAwarenessSystem.html#ab0fb3823809dc056fecc82cc72a80a55", null ],
     [ "~MotorcycleAwarenessSystem", "classMotorcycleAwarenessSystem.html#a89ce16a722b3575e1415cbe9c7eedbd3", null ],
     [ "GetMotorcycleLocation", "classMotorcycleAwarenessSystem.html#a840a5bc17d75276ecdb3a39d7aaf4109", null ],
-    [ "Initialize", "classMotorcycleAwarenessSystem.html#a826b6c2286c494c8aca3a47e6430b3ff", null ],
+    [ "Initialize", "classMotorcycleAwarenessSystem.html#a341f27867c8d6aa0865040279ee246a9", null ],
     [ "IsHazardPresent", "classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1", null ],
     [ "IsMotorcycleInRange", "classMotorcycleAwarenessSystem.html#a239655aca9c875b1dbbad3ce155c7892", null ],
     [ "IsVehicleBlinkerOn", "classMotorcycleAwarenessSystem.html#a9c3f98a014b0af39fa120f478eb5f348", null ],

@@ -1,5 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$classMotorcycleAwarenessSystem.html#a826b6c2286c494c8aca3a47e6430b3ff" title="Method to initialize the MAS system. " alt="" coords="105,70,301,111"/>
+<area shape="rect" id="node2" href="$classMotorcycleAwarenessSystem.html#a341f27867c8d6aa0865040279ee246a9" title="MotorcycleAwarenessSystem\l::Initialize" alt="" coords="105,70,301,111"/>
 <area shape="rect" id="node3" href="$classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e" title="Method to continuously monitor the conditions during run&#45;time. " alt="" coords="105,135,301,177"/>
 <area shape="rect" id="node4" href="$classMotorcycleAwarenessSystem.html#a4e6eec23ec46e24ee377a3c94e15eba4" title="Method to track the motorcycle using its GPS signal. " alt="" coords="350,5,546,46"/>
 <area shape="rect" id="node5" href="$classMotorcycleAwarenessSystem.html#a35d59c8299b0d5ef43c10306cc7f2ee1" title="MotorcycleAwarenessSystem\l::IsHazardPresent" alt="" coords="350,70,546,111"/>
