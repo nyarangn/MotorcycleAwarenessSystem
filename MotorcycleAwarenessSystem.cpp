@@ -22,6 +22,7 @@ MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem( void )
     // Do nothing
 }
 
+/////////////////////////////////////////////////////////////////////////
 /// Method to initialize the MAS system
 ///
 /// @param[in] motorcycleTurnSignal  Motorcycle turn signal
@@ -34,7 +35,7 @@ MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem( void )
 ///
 /// @retval    true
 /// @retval    false
-
+/////////////////////////////////////////////////////////////////////////
 bool MotorcycleAwarenessSystem::Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
                                             RadarSignal_t* motorcycleRadarSignal, GpsSignal_t* motorcycleGpsSignal,
                                             GpsSignal_t* carGpsSignal  )
