@@ -22,28 +22,26 @@ int main( void )
     MotorcycleAwarenessSystem MAS_motorcycle( MOTORCYCLE );
     // Initialize the car MAS
     isSuccess = MAS_motorcycle.Initialize( motorcycleTurnSignal, (TurnSignal_t*)NULL, motorcycleRadarSignal,
-                                           motorcycleGpsSignal, carGpsSignal );
+                                          motorcycleGpsSignal, carGpsSignal );
 #ifdef MAS_DEBUG
     if ( !isSuccess )
     {
         std::cout << "MAS initialization for the motorcycle failed" << std::endl;
     }
 #endif
-
     // Instantiate the Motorcycle Awareness System (MAS) for the car
     MotorcycleAwarenessSystem MAS_car( CAR );
     // Initialize the car MAS
     isSuccess =  MAS_car.Initialize( (TurnSignal_t*)NULL, carTurnSignal, motorcycleRadarSignal,
-                                     motorcycleGpsSignal, carGpsSignal );
+        motorcycleGpsSignal, carGpsSignal );
 #ifdef MAS_DEBUG
     if ( !isSuccess )
     {
-        std::cout << "MAS initialization for the car failed" << std::endl;
-    }
+    std::cout << "MAS initialization for the car failed" << std::endl;
+}
 #endif
 
-    // Run the MAS systems for the car & motorcycle only if the systems were
-    // initialized successfully
+    // Run the MAS systems for the car & motorcycle
     if ( isSuccess )
     {
         while ( true )

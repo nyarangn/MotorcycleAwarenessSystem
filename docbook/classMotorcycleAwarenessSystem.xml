@@ -80,7 +80,7 @@ void )</para>
             <para>
                 <itemizedlist>
                     <listitem>
-                        <para>void <link linkend="classMotorcycleAwarenessSystem_1a826b6c2286c494c8aca3a47e6430b3ff">Initialize</link> (
+                        <para>bool <link linkend="classMotorcycleAwarenessSystem_1a341f27867c8d6aa0865040279ee246a9">Initialize</link> (
 <link linkend="structTurnSignal__t">TurnSignal_t</link> * motorcycleTurnSignal, <link linkend="structTurnSignal__t">TurnSignal_t</link> * carTurnSignal, <link linkend="structRadarSignal__t">RadarSignal_t</link> * motorcycleRadarSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * motorcycleGpsSignal, <link linkend="structGpsSignal__t">GpsSignal_t</link> * carGpsSignal)</para>
                     </listitem>
                 </itemizedlist>
@@ -168,9 +168,81 @@ void )</para>
                 <title>MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem (void)</title> <emphasis>Destructor.</emphasis>
                 
             </section>
-            <section xml:id="classMotorcycleAwarenessSystem_1a826b6c2286c494c8aca3a47e6430b3ff">
-                <title>void MotorcycleAwarenessSystem::Initialize (TurnSignal_t *motorcycleTurnSignal, TurnSignal_t *carTurnSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</title> <emphasis>Method to initialize the MAS system.</emphasis>
+            <section xml:id="classMotorcycleAwarenessSystem_1a341f27867c8d6aa0865040279ee246a9">
+                <title>bool MotorcycleAwarenessSystem::Initialize (TurnSignal_t *motorcycleTurnSignal, TurnSignal_t *carTurnSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</title> <emphasis></emphasis>
                 
+<para>Method to initialize the MAS system</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>motorcycleTurnSignal</entry>
+                                <entry>
+<para>Motorcycle turn signal </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>carTurnSignal</entry>
+                                <entry>
+<para>Car turn signal </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>motorcycleRadarSignal</entry>
+                                <entry>
+<para>Motorcycle radar signal </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>motorcycleGpsSignal</entry>
+                                <entry>
+<para>Motorcycle GPS signal </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>carGpsSignal</entry>
+                                <entry>
+<para>Car GPS signal</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Pass fail status of the initialization</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters</title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <tbody>
+                            <row>
+                                <entry>true</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>false</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
             </section>
             <section xml:id="classMotorcycleAwarenessSystem_1afb19e832c17d43941d9ed6c4f4435a2e">
                 <title>void MotorcycleAwarenessSystem::MonitorConditions (void)</title> <emphasis>Method to continuously monitor the conditions during run-time.</emphasis>

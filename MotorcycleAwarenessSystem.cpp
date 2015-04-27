@@ -23,20 +23,46 @@ MotorcycleAwarenessSystem::~MotorcycleAwarenessSystem( void )
 }
 
 /// Method to initialize the MAS system
-void MotorcycleAwarenessSystem::Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
+///
+/// @param[in] motorcycleTurnSignal  Motorcycle turn signal
+/// @param[in] carTurnSignal         Car turn signal
+/// @param[in] motorcycleRadarSignal Motorcycle radar signal
+/// @param[in] motorcycleGpsSignal   Motorcycle GPS signal
+/// @param[in] carGpsSignal          Car GPS signal
+///
+/// @return    Pass fail status of the initialization
+///
+/// @retval    true
+/// @retval    false
+
+bool MotorcycleAwarenessSystem::Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
                                             RadarSignal_t* motorcycleRadarSignal, GpsSignal_t* motorcycleGpsSignal,
                                             GpsSignal_t* carGpsSignal  )
 {
-    // Initialize the motorcycle radar signal
-    this->motorcycleRadarSignal = motorcycleRadarSignal;
+    // Initialize the initialization state
+    bool isSuccess = false;
 
-    // Initialize the turn signal map
-    turnSignal[MOTORCYCLE] = motorcycleTurnSignal;
-    turnSignal[CAR] = carTurnSignal;
+    if ( motorcycleTurnSignal != (TurnSignal_t*)NULL &&
+         carTurnSignal != (TurnSignal_t*)NULL &&
+         motorcycleRadarSignal != (RadarSignal_t*)NULL &&
+         motorcycleGpsSignal != (GpsSignal_t*)NULL &&
+         carGpsSignal != (GpsSignal_t*)NULL )
+    {
+        // Initialize the motorcycle radar signal
+        this->motorcycleRadarSignal = motorcycleRadarSignal;
 
-    // Initialize the GPS signals
-    this->motorcycleGpsSignal = motorcycleGpsSignal;
-    this->motorcycleGpsSignal = motorcycleGpsSignal;
+        // Initialize the turn signal map
+        turnSignal[MOTORCYCLE] = motorcycleTurnSignal;
+        turnSignal[CAR] = carTurnSignal;
+
+        // Initialize the GPS signals
+        this->motorcycleGpsSignal = motorcycleGpsSignal;
+        this->carGpsSignal = carGpsSignal;
+
+        isSuccess = true;
+    }
+
+    return isSuccess;
 }
 
 /// Method to continuously monitor the conditions during run-time

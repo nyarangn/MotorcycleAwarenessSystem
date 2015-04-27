@@ -14,7 +14,7 @@ class MotorcycleAwarenessSystem
     public:
         MotorcycleAwarenessSystem( VehicleType vehicleType );
         ~MotorcycleAwarenessSystem( void );
-        void Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
+        bool Initialize( TurnSignal_t* motorcycleTurnSignal, TurnSignal_t* carTurnSignal,
                          RadarSignal_t* motorcycleRadarSignal, GpsSignal_t* motorcycleGpsSignal,
                          GpsSignal_t* carGpsSignal );
         void MonitorConditions( void );

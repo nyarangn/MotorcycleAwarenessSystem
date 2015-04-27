@@ -129,39 +129,57 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html','');});
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>* carTurnSignal = <span class="keyword">new</span> <a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="structRadarSignal__t.html">RadarSignal_t</a>* motorcycleRadarSignal = <span class="keyword">new</span> <a class="code" href="structRadarSignal__t.html">RadarSignal_t</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>* motorcycleGpsSignal = <span class="keyword">new</span> <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>* carGpsSignal = <span class="keyword">new</span> <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>;;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>* carGpsSignal = <span class="keyword">new</span> <a class="code" href="structGpsSignal__t.html">GpsSignal_t</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a> MAS_motorcycle( <a class="code" href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a">MOTORCYCLE</a> );</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Initialize the car MAS</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    MAS_motorcycle.<a class="code" href="classMotorcycleAwarenessSystem.html#a826b6c2286c494c8aca3a47e6430b3ff">Initialize</a>( motorcycleTurnSignal, (<a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>*)NULL, motorcycleRadarSignal,</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                          motorcycleGpsSignal, carGpsSignal );</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// Instantiate the Motorcycle Awareness System (MAS) for the car</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a> MAS_car( <a class="code" href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40">CAR</a> );</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Initialize the car MAS</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    MAS_car.<a class="code" href="classMotorcycleAwarenessSystem.html#a826b6c2286c494c8aca3a47e6430b3ff">Initialize</a>( (<a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>*)NULL, carTurnSignal, motorcycleRadarSignal,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                          motorcycleGpsSignal, carGpsSignal );</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">// Run the MAS systems for the car &amp; motorcycle</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">while</span> ( <span class="keyword">true</span> )</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        MAS_motorcycle.<a class="code" href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MonitorConditions</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        MAS_car.<a class="code" href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MonitorConditions</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        usleep(250);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> isSuccess = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a> MAS_motorcycle( <a class="code" href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a">MOTORCYCLE</a> );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Initialize the car MAS</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    isSuccess = MAS_motorcycle.<a class="code" href="classMotorcycleAwarenessSystem.html#a341f27867c8d6aa0865040279ee246a9">Initialize</a>( motorcycleTurnSignal, (<a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>*)NULL, motorcycleRadarSignal,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                           motorcycleGpsSignal, carGpsSignal );</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifdef MAS_DEBUG</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> ( !isSuccess )</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;MAS initialization for the motorcycle failed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">// Instantiate the Motorcycle Awareness System (MAS) for the car</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a> MAS_car( <a class="code" href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40">CAR</a> );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Initialize the car MAS</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    isSuccess =  MAS_car.<a class="code" href="classMotorcycleAwarenessSystem.html#a341f27867c8d6aa0865040279ee246a9">Initialize</a>( (<a class="code" href="structTurnSignal__t.html">TurnSignal_t</a>*)NULL, carTurnSignal, motorcycleRadarSignal,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                     motorcycleGpsSignal, carGpsSignal );</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef MAS_DEBUG</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>        std::cout &lt;&lt; <span class="stringliteral">&quot;The MAS is running&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>    }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_a826b6c2286c494c8aca3a47e6430b3ff"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a826b6c2286c494c8aca3a47e6430b3ff">MotorcycleAwarenessSystem::Initialize</a></div><div class="ttdeci">void Initialize(TurnSignal_t *motorcycleTurnSignal, TurnSignal_t *carTurnSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</div><div class="ttdoc">Method to initialize the MAS system. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00026">MotorcycleAwarenessSystem.cpp:26</a></div></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> ( !isSuccess )</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;MAS initialization for the car failed&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Run the MAS systems for the car &amp; motorcycle only if the systems were</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// initialized successfully</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> ( isSuccess )</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">while</span> ( <span class="keyword">true</span> )</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            MAS_motorcycle.<a class="code" href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MonitorConditions</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            MAS_car.<a class="code" href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MonitorConditions</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            usleep(250);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifdef MAS_DEBUG</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span>            std::cout &lt;&lt; <span class="stringliteral">&quot;The MAS is running&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor"></span>        }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="ttc" id="main_8cpp_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00010">main.cpp:10</a></div></div>
 <div class="ttc" id="MotorcycleAwarenessSystemTypes_8hpp_html_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40"><div class="ttname"><a href="MotorcycleAwarenessSystemTypes_8hpp.html#a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40">CAR</a></div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00011">MotorcycleAwarenessSystemTypes.hpp:11</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_a341f27867c8d6aa0865040279ee246a9"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#a341f27867c8d6aa0865040279ee246a9">MotorcycleAwarenessSystem::Initialize</a></div><div class="ttdeci">bool Initialize(TurnSignal_t *motorcycleTurnSignal, TurnSignal_t *carTurnSignal, RadarSignal_t *motorcycleRadarSignal, GpsSignal_t *motorcycleGpsSignal, GpsSignal_t *carGpsSignal)</div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00038">MotorcycleAwarenessSystem.cpp:38</a></div></div>
 <div class="ttc" id="classMotorcycleAwarenessSystem_html"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html">MotorcycleAwarenessSystem</a></div><div class="ttdoc">Class declaration for the Motorcycle Awareness System (MAS) </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8hpp_source.html#l00012">MotorcycleAwarenessSystem.hpp:12</a></div></div>
-<div class="ttc" id="classMotorcycleAwarenessSystem_html_afb19e832c17d43941d9ed6c4f4435a2e"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MotorcycleAwarenessSystem::MonitorConditions</a></div><div class="ttdeci">void MonitorConditions(void)</div><div class="ttdoc">Method to continuously monitor the conditions during run-time. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00043">MotorcycleAwarenessSystem.cpp:43</a></div></div>
+<div class="ttc" id="classMotorcycleAwarenessSystem_html_afb19e832c17d43941d9ed6c4f4435a2e"><div class="ttname"><a href="classMotorcycleAwarenessSystem.html#afb19e832c17d43941d9ed6c4f4435a2e">MotorcycleAwarenessSystem::MonitorConditions</a></div><div class="ttdeci">void MonitorConditions(void)</div><div class="ttdoc">Method to continuously monitor the conditions during run-time. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystem_8cpp_source.html#l00069">MotorcycleAwarenessSystem.cpp:69</a></div></div>
 <div class="ttc" id="MotorcycleAwarenessSystemTypes_8hpp_html"><div class="ttname"><a href="MotorcycleAwarenessSystemTypes_8hpp.html">MotorcycleAwarenessSystemTypes.hpp</a></div></div>
 <div class="ttc" id="structGpsSignal__t_html"><div class="ttname"><a href="structGpsSignal__t.html">GpsSignal_t</a></div><div class="ttdoc">Structure that emulates a GPS signal. </div><div class="ttdef"><b>Definition:</b> <a href="MotorcycleAwarenessSystemTypes_8hpp_source.html#l00025">MotorcycleAwarenessSystemTypes.hpp:25</a></div></div>
 <div class="ttc" id="MotorcycleAwarenessSystem_8hpp_html"><div class="ttname"><a href="MotorcycleAwarenessSystem_8hpp.html">MotorcycleAwarenessSystem.hpp</a></div></div>
@@ -174,7 +192,7 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 26 2015 18:16:07 for Motorcycle Awareness System (MAS) by
+    <li class="footer">Generated on Sun Apr 26 2015 19:01:54 for Motorcycle Awareness System (MAS) by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -18,34 +18,53 @@
 00014     \hyperlink{structTurnSignal__t}{TurnSignal\_t}* carTurnSignal = \textcolor{keyword}{new} \hyperlink{structTurnSignal__t}{TurnSignal\_t};
 00015     \hyperlink{structRadarSignal__t}{RadarSignal\_t}* motorcycleRadarSignal = \textcolor{keyword}{new} \hyperlink{structRadarSignal__t}{RadarSignal\_t};
 00016     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* motorcycleGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};
-00017     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* carGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};;
+00017     \hyperlink{structGpsSignal__t}{GpsSignal\_t}* carGpsSignal = \textcolor{keyword}{new} \hyperlink{structGpsSignal__t}{GpsSignal\_t};
 00018 
-00019     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle}
-00020     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_motorcycle( 
+00019     \textcolor{keywordtype}{bool} isSuccess = \textcolor{keyword}{false};
+00020 
+00021     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the motorcycle}
+00022     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_motorcycle( 
       \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa39b983b1f7acfc4e7c900d77b0fded6a}{MOTORCYCLE} );
-00021     \textcolor{comment}{// Initialize the car MAS}
-00022     MAS\_motorcycle.\hyperlink{classMotorcycleAwarenessSystem_a826b6c2286c494c8aca3a47e6430b3ff}{Initialize}( motorcycleTurnSignal, (\hyperlink{structTurnSignal__t}{TurnSignal\_t}*)NULL, 
+00023     \textcolor{comment}{// Initialize the car MAS}
+00024     isSuccess = MAS\_motorcycle.\hyperlink{classMotorcycleAwarenessSystem_a341f27867c8d6aa0865040279ee246a9}{Initialize}( motorcycleTurnSignal, (
+      \hyperlink{structTurnSignal__t}{TurnSignal\_t}*)NULL, motorcycleRadarSignal,
+00025                                            motorcycleGpsSignal, carGpsSignal );
+00026 \textcolor{preprocessor}{#ifdef MAS\_DEBUG}
+00027 \textcolor{preprocessor}{}    \textcolor{keywordflow}{if} ( !isSuccess )
+00028     \{
+00029         std::cout << \textcolor{stringliteral}{"MAS initialization for the motorcycle failed"} << std::endl;
+00030     \}
+00031 \textcolor{preprocessor}{#endif}
+00032 \textcolor{preprocessor}{}
+00033     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the car}
+00034     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_car( \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR} );
+00035     \textcolor{comment}{// Initialize the car MAS}
+00036     isSuccess =  MAS\_car.\hyperlink{classMotorcycleAwarenessSystem_a341f27867c8d6aa0865040279ee246a9}{Initialize}( (\hyperlink{structTurnSignal__t}{TurnSignal\_t}*)NULL, carTurnSignal, 
       motorcycleRadarSignal,
-00023                                           motorcycleGpsSignal, carGpsSignal );
-00024 
-00025     \textcolor{comment}{// Instantiate the Motorcycle Awareness System (MAS) for the car}
-00026     \hyperlink{classMotorcycleAwarenessSystem}{MotorcycleAwarenessSystem} MAS\_car( \hyperlink{MotorcycleAwarenessSystemTypes_8hpp_a0c05c42b98a847f971385c81c2a81afaa5fc54ebcb1dd4bf1e1b93cbc77b57b40}{CAR} );
-00027     \textcolor{comment}{// Initialize the car MAS}
-00028     MAS\_car.\hyperlink{classMotorcycleAwarenessSystem_a826b6c2286c494c8aca3a47e6430b3ff}{Initialize}( (\hyperlink{structTurnSignal__t}{TurnSignal\_t}*)NULL, carTurnSignal, motorcycleRadarSignal,
-00029                                           motorcycleGpsSignal, carGpsSignal );
-00030 
-00031     \textcolor{comment}{// Run the MAS systems for the car & motorcycle}
-00032     \textcolor{keywordflow}{while} ( \textcolor{keyword}{true} )
-00033     \{
-00034         MAS\_motorcycle.\hyperlink{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{MonitorConditions}();
-00035         MAS\_car.\hyperlink{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{MonitorConditions}();
-00036         usleep(250);
-00037 
+00037                                      motorcycleGpsSignal, carGpsSignal );
 00038 \textcolor{preprocessor}{#ifdef MAS\_DEBUG}
-00039 \textcolor{preprocessor}{}        std::cout << \textcolor{stringliteral}{"The MAS is running"} << std::endl;
-00040 \textcolor{preprocessor}{#endif}
-00041 \textcolor{preprocessor}{}    \}
-00042 
-00043     \textcolor{keywordflow}{return} 0;
-00044 \}
+00039 \textcolor{preprocessor}{}    \textcolor{keywordflow}{if} ( !isSuccess )
+00040     \{
+00041         std::cout << \textcolor{stringliteral}{"MAS initialization for the car failed"} << std::endl;
+00042     \}
+00043 \textcolor{preprocessor}{#endif}
+00044 \textcolor{preprocessor}{}
+00045     \textcolor{comment}{// Run the MAS systems for the car & motorcycle only if the systems were}
+00046     \textcolor{comment}{// initialized successfully}
+00047     \textcolor{keywordflow}{if} ( isSuccess )
+00048     \{
+00049         \textcolor{keywordflow}{while} ( \textcolor{keyword}{true} )
+00050         \{
+00051             MAS\_motorcycle.\hyperlink{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{MonitorConditions}();
+00052             MAS\_car.\hyperlink{classMotorcycleAwarenessSystem_afb19e832c17d43941d9ed6c4f4435a2e}{MonitorConditions}();
+00053             usleep(250);
+00054 
+00055 \textcolor{preprocessor}{#ifdef MAS\_DEBUG}
+00056 \textcolor{preprocessor}{}            std::cout << \textcolor{stringliteral}{"The MAS is running"} << std::endl;
+00057 \textcolor{preprocessor}{#endif}
+00058 \textcolor{preprocessor}{}        \}
+00059     \}
+00060 
+00061     \textcolor{keywordflow}{return} 0;
+00062 \}
 \end{DoxyCode}
